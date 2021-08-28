@@ -6,7 +6,16 @@
     <description>Recent content in Hugo on Lucileee Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://lucileee5657.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lucileee5657.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog with Github and Hugo on Mac</title>
+      <link>https://lucileee5657.github.io/2021/my-first-post/</link>
+      <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2021/my-first-post/</guid>
+      <description>Start with Hugo Install Hugo install from brew brew install hugo check version hugo version Create new website new hugo website folder hugo new site website-hugo cd website-hugo download theme (here we use LeaveIT) git clone https://github.com/liuzc/LeaveIt.git themes/LeaveIt copy themes/LeaveIt/layouts to current root folder cp -r themes/LeaveIt/layouts . copy resources from theme/LeaveIt/exampleSite to current root folder cp -r themes/LeaveIt/exampleSite/static/ static/ cp -r themes/LeaveIt/exampleSite/content/ content/ cp -r themes/LeaveIt/exampleSite/resources/ resources/ cp -r themes/LeaveIt/exampleSite/config.</description>
+    </item>
+    
     <item>
       <title>Creating a New Theme</title>
       <link>https://lucileee5657.github.io/2014/creating-a-new-theme/</link>

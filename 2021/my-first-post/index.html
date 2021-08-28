@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Lucile Yang">
+  
+  
+  
+  <link rel="prev" href="https://lucileee5657.github.io/2014/creating-a-new-theme/" />
+  
+  <link rel="canonical" href="https://lucileee5657.github.io/2021/my-first-post/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Blog with Github and Hugo on Mac | Lucileee Homepage
+       
+  </title>
+  <meta name="title" content="Blog with Github and Hugo on Mac | Lucileee Homepage">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/lucileee5657.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "Blog with Github and Hugo on Mac",
+    "headline" : "Blog with Github and Hugo on Mac",
+    "description" : "Start with Hugo Install Hugo install from brew brew install hugo check version hugo version Create new website new hugo website folder hugo new site website-hugo cd website-hugo download theme (here we use LeaveIT) git clone https:\/\/github.com\/liuzc\/LeaveIt.git themes\/LeaveIt copy themes\/LeaveIt\/layouts to current root folder cp -r themes\/LeaveIt\/layouts . copy resources from theme\/LeaveIt\/exampleSite to current root folder cp -r themes\/LeaveIt\/exampleSite\/static\/ static\/ cp -r themes\/LeaveIt\/exampleSite\/content\/ content\/ cp -r themes\/LeaveIt\/exampleSite\/resources\/ resources\/ cp -r themes\/LeaveIt\/exampleSite\/config.",
+    "inLanguage" : "en-us",
+    "author" : "Lucile Yang",
+    "creator" : "Lucile Yang",
+    "publisher": "Lucile Yang",
+    "accountablePerson" : "Lucile Yang",
+    "copyrightHolder" : "Lucile Yang",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-08-28 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-08-28 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/lucileee5657.github.io\/2021\/my-first-post\/",
+    "wordCount" : "244",
+    "keywords" : [ "Theme","Hugo","Blog", "Lucileee Homepage"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://lucileee5657.github.io">Lucileee Homepage</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/about/" title="">About Me</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://lucileee5657.github.io">Lucileee Homepage</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/about/" title="">About Me</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Blog with Github and Hugo on Mac</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://lucileee5657.github.io" rel="author">Lucile Yang</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2021-08-28 itemprop="datePublished">August 28, 2021</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://lucileee5657.github.io/categories/uncategorized/"> Uncategorized </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h2 id="start-with-hugo">Start with Hugo</h2>
+<h3 id="install-hugo">Install Hugo</h3>
+<h4 id="install-from-brew">install from brew</h4>
+<pre><code>brew install hugo
+</code></pre><h4 id="check-version">check version</h4>
+<pre><code>hugo version
+</code></pre><h3 id="create-new-website">Create new website</h3>
+<h4 id="new-hugo-website-folder">new hugo website folder</h4>
+<pre><code>hugo new site website-hugo
+cd website-hugo
+</code></pre><h4 id="download-theme-here-we-use-leaveit">download theme (here we use <strong>LeaveIT</strong>)</h4>
+<pre><code>git clone https://github.com/liuzc/LeaveIt.git themes/LeaveIt
+</code></pre><h4 id="copy-themesleaveitlayouts-to-current-root-folder">copy <strong>themes/LeaveIt/layouts</strong> to current root folder</h4>
+<pre><code>cp -r themes/LeaveIt/layouts .
+</code></pre><h4 id="copy-resources-from-themeleaveitexamplesite-to-current-root-folder">copy resources from <strong>theme/LeaveIt/exampleSite</strong> to current root folder</h4>
+<pre><code>cp -r themes/LeaveIt/exampleSite/static/  static/
+cp -r themes/LeaveIt/exampleSite/content/  content/
+cp -r themes/LeaveIt/exampleSite/resources/  resources/
+cp -r themes/LeaveIt/exampleSite/config.toml  .
+</code></pre><h4 id="run-local-website">run local website</h4>
+<pre><code>hugo server -D
+
+                   | EN  
+-------------------+-----
+  Pages            | 47  
+  Paginator pages  |  0  
+  Non-page files   |  6  
+  Static files     |  2  
+  Processed images |  0  
+  Aliases          | 13  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+</code></pre><h4 id="then-go-to-httplocalhost1313">then go to http://localhost:1313/</h4>
+<h3 id="create-new-posts">Create new posts</h3>
+<h4 id="create-under-contentposts">create under <strong>content/posts</strong></h4>
+<pre><code>hugo new posts/my-first-post.md
+</code></pre><h2 id="start-with-github">Start with Github</h2>
+<h3 id="create-repo-on-github">Create repo on Github</h3>
+<p>create one private repo <strong>website-hugo</strong> and one public repo <strong>lucileee5657.github.io</strong></p>
+<h3 id="run-command-to-create-the-public-folder">Run command to create the /public folder</h3>
+<pre><code>hugo
+</code></pre><h3 id="connect-public-to-the-public-repo-lucileee5657githubio-on-github">Connect <strong>/public</strong> to the public repo <strong>lucileee5657.github.io</strong> on github</h3>
+<pre><code>cd public
+git init
+git remote add origin https://github.com/lucileee5657/lucileee5657.github.io.git
+git add .
+git commit -m &quot;initial commit&quot;
+git push -u origin master
+</code></pre><h3 id="connect-local-website_hugo-to-the-private-repo-website_hugo-on-github">Connect local <strong>website_hugo</strong> to the private repo <strong>website_hugo</strong> on github</h3>
+<pre><code>cd ../
+git init
+git remote add origin https://github.com/lucileee5657/lucileee5657.github.io.git
+git add .
+git commit -m &quot;initial commit&quot;
+git push -u origin master
+</code></pre><p><strong>Note:</strong>
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see <a href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/</a> for more information.</p>
+<p><strong>Then go to <a href="https://lucileee5657.github.io/">https://lucileee5657.github.io/</a> to see your website</strong></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Lucile Yang </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://lucileee5657.github.io/2021/my-first-post/>https://lucileee5657.github.io/2021/my-first-post/</span>
+            </p>
+            
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/theme/">
+                    #Theme</a></span>
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/hugo/">
+                    #Hugo</a></span>
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/blog/">
+                    #Blog</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://lucileee5657.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://lucileee5657.github.io/2014/creating-a-new-theme/" class="prev" rel="prev" title="Creating a New Theme"><i class="iconfont icon-left"></i>&nbsp;Creating a New Theme</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://lucileee5657.github.io">Lucile Yang</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
