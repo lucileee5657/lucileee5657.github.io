@@ -1,11 +1,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lucileee Homepage on Lucileee Homepage</title>
-    <link>http://lucileee5657.github.io/</link>
+    <link>https://lucileee5657.github.io/</link>
     <description>Recent content in Lucileee Homepage on Lucileee Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Me</title>
+      <link>https://lucileee5657.github.io/about/</link>
+      <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/about/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hi! This is Lucile (Ya-Ting) Yang, a master&amp;rsquo;s student at the Graduate Institute of Communication Engineering of National Taiwan University. I got my bachelor&amp;rsquo;s degree in electrical engineering from National Tsing Hua University.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;M.S. student in Graduate Institute of Communication Engineering, National Taiwan University (2020-now)&lt;/li&gt;
+&lt;li&gt;Exchange student in Computer Technology and Information System, Bilkent University (2019/09-2020/01)&lt;/li&gt;
+&lt;li&gt;B.S. degree of Department of Electrical Engineering, National Tsing Hua University (2016/09-2020/06)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MOST - Intelligent Production Control Exploiting 5G-enabled IIoT and Edge Computing (2020/08-2021/07)&lt;/li&gt;
+&lt;li&gt;EE intern, Logitech (2020/03-2020/06)&lt;/li&gt;
+&lt;li&gt;Industry-Academia Cooperation Project with Yuanta Futures (2019/03-2020/05)&lt;/li&gt;
+&lt;li&gt;Special Topic on Implementation, Vision Science Lab, NTHU (2018/09-2019/09)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;publication&#34;&gt;Publication&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ya-Ting Yang and Hung-Yu Wei, &amp;ldquo;&lt;strong&gt;Edge Computing and Networking Resource Management for Decomposable Deep Learning: An Auction-Based Approach&lt;/strong&gt;,&amp;rdquo; The 22nd Asia-Pacific Network Operations and Management Symposium (APNOMS), Sept. 2021&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;award&#34;&gt;Award&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Honorary Membership of the Society by NTHU, The Phi Tau Phi Scholastic Honor Society of the Republic of China&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;skill&#34;&gt;Skill&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;English
+&lt;ul&gt;
+&lt;li&gt;TOEFL: 101&lt;/li&gt;
+&lt;li&gt;TOEIC: 865&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Programming
+&lt;ul&gt;
+&lt;li&gt;C/C++, HTML/CSS, Python (including PyTorch and OpenCV), Java, Verilog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;extracurricular-activities-and-leadership&#34;&gt;Extracurricular Activities and Leadership&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Volunteer
+&lt;ul&gt;
+&lt;li&gt;Bal Ashram, Rajasthan, India (2019 summer)&lt;/li&gt;
+&lt;li&gt;Xin Jiang, China (2018 summer)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Student Association
+&lt;ul&gt;
+&lt;li&gt;NTHUEE Student Association – Activities Department&lt;/li&gt;
+&lt;li&gt;NTHU Artmay 6th – Head of the Publicity Department&lt;/li&gt;
+&lt;li&gt;NTHU EE Camp (2017) – Education Department&lt;/li&gt;
+&lt;li&gt;NTHU EECC Camp (2017, 2018) – Activities Department&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
