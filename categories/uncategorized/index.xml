@@ -6,7 +6,39 @@
     <description>Recent content in Uncategorized on Lucileee Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lucileee5657.github.io/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Oct 2021 18:29:38 +0800</lastBuildDate><atom:link href="https://lucileee5657.github.io/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Game Theory part 1</title>
+      <link>https://lucileee5657.github.io/2021/game_theory_1/</link>
+      <pubDate>Sat, 02 Oct 2021 18:29:38 +0800</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2021/game_theory_1/</guid>
+      <description>The VCG Auction A VCG mechanism consists of $n$ strategic players and a finite set $\Omega$ of possible auction outcomes. Each player $i$ has a private valuation $v_i(\omega)$ for each outcome $\omega \in \Omega $. If assumed truthful bids, the allocation rule is to select an outcome $\omega^*=X(bid)$ that maximizes the sum of bids. \begin{equation} X(bid) = \arg\max_{\omega\in\Omega}{\sum_{i=1}^n{bid_i(\omega)}}. \end{equation} Then, the payment function is designed as \begin{equation} p_i(bid) = \max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)} - \sum_{j \neq i }{bid_j(\omega^{*})}, \end{equation} where $\omega^*=X(bid)$, in order to charge bidder (player) $i$ for its externality.</description>
+    </item>
+    
+    <item>
+      <title>Exchange to CTIS in Bilkent, Turkey</title>
+      <link>https://lucileee5657.github.io/2021/exchange_1/</link>
+      <pubDate>Sat, 02 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2021/exchange_1/</guid>
+      <description>Why Turkey There are so many schools, countries in the exchange program. Why did I choose Bilkent in Turkey?
+ Budget: Devaluation of the Turkish Lira Culture: Experience Middle East and Islamic culture History: Prehistoric, Roman, Seljuk, Ottoman Empire Landscape: Like Cappadocia, Pamukkale&amp;hellip;etc.  &amp;ndash;
+ 對我來說，土耳其一直是個謎，想去探秘的念頭由來已久。於是，我和我的旅伴們相約來到「文明的搖籃」——土耳其 伊斯坦堡是世界上唯一一座既做過基督教帝國首都、又做過伊斯蘭教帝國首都的城市。也是東西方世界神奇的交匯點，通過博斯普魯斯海峽橫跨歐亞大陸。在這個大約有1000座清真寺、500個東政教堂的城市，你永遠也不用擔心會視覺疲勞。
+        About school classes What’s the differences between courses I took in Taiwan and in Turkey?</description>
+    </item>
+    
+    <item>
+      <title>My Internship in Logitech EE Team</title>
+      <link>https://lucileee5657.github.io/2021/intern-logi/</link>
+      <pubDate>Sat, 02 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2021/intern-logi/</guid>
+      <description>Goal Developed an improvement proposal for the Logitech G915 TKL keyboard based on brainstorming, cross-team discussions and user interviews
+ Look cool Better user experience Practicality  Mothod Disassembled the model, added firmware codes, and modified the circuit board to build a prototype.
+Timeline What I&amp;rsquo;ve learned  Know the responsibilities of various departments of the company and relationships between them. Know more about the process of product development Know the importance of user needs and the market structure Familiar with the working mode that requires cooperation between different departments Review C/C++ Learn presentation skills Practice communication and expressing ideas in English  </description>
+    </item>
+    
     <item>
       <title>Blog with Github and Hugo on Mac</title>
       <link>https://lucileee5657.github.io/2021/my-first-post/</link>
@@ -14,51 +46,6 @@
       
       <guid>https://lucileee5657.github.io/2021/my-first-post/</guid>
       <description>Start with Hugo Install Hugo install from brew brew install hugo check version hugo version Create new website new hugo website folder hugo new site website-hugo cd website-hugo download theme (here we use LeaveIT) git clone https://github.com/liuzc/LeaveIt.git themes/LeaveIt copy themes/LeaveIt/layouts to current root folder cp -r themes/LeaveIt/layouts . copy resources from theme/LeaveIt/exampleSite to current root folder cp -r themes/LeaveIt/exampleSite/static/ static/ cp -r themes/LeaveIt/exampleSite/content/ content/ cp -r themes/LeaveIt/exampleSite/resources/ resources/ cp -r themes/LeaveIt/exampleSite/config.</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://lucileee5657.github.io/2014/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://lucileee5657.github.io/2014/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://lucileee5657.github.io/2014/goisforlovers/</link>
-      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://lucileee5657.github.io/2014/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://lucileee5657.github.io/2014/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://lucileee5657.github.io/2014/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://lucileee5657.github.io/2014/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://lucileee5657.github.io/2014/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
   </channel>

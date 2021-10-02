@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intern on Lucileee Homepage</title>
+    <link>https://lucileee5657.github.io/tags/intern/</link>
+    <description>Recent content in Intern on Lucileee Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lucileee5657.github.io/tags/intern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Internship in Logitech EE Team</title>
+      <link>https://lucileee5657.github.io/2021/intern-logi/</link>
+      <pubDate>Sat, 02 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2021/intern-logi/</guid>
+      <description>Goal Developed an improvement proposal for the Logitech G915 TKL keyboard based on brainstorming, cross-team discussions and user interviews
+ Look cool Better user experience Practicality  Mothod Disassembled the model, added firmware codes, and modified the circuit board to build a prototype.
+Timeline What I&amp;rsquo;ve learned  Know the responsibilities of various departments of the company and relationships between them. Know more about the process of product development Know the importance of user needs and the market structure Familiar with the working mode that requires cooperation between different departments Review C/C++ Learn presentation skills Practice communication and expressing ideas in English  </description>
+    </item>
+    
+  </channel>
+</rss>

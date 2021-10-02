@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Lucile Yang">
+  
+  
+  
+  <link rel="prev" href="https://lucileee5657.github.io/2021/exchange_1/" />
+  
+  <link rel="canonical" href="https://lucileee5657.github.io/2021/game_theory_1/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Game Theory part 1 | Lucileee Homepage
+       
+  </title>
+  <meta name="title" content="Game Theory part 1 | Lucileee Homepage">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/lucileee5657.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "Game Theory part 1",
+    "headline" : "Game Theory part 1",
+    "description" : "The VCG Auction A VCG mechanism consists of $n$ strategic players and a finite set $\\Omega$ of possible auction outcomes. Each player $i$ has a private valuation $v_i(\\omega)$ for each outcome $\\omega \\in \\Omega $. If assumed truthful bids, the allocation rule is to select an outcome $\\omega^*=X(bid)$ that maximizes the sum of bids. \\begin{equation} X(bid) = \\arg\\max_{\\omega\\in\\Omega}{\\sum_{i=1}^n{bid_i(\\omega)}}. \\end{equation} Then, the payment function is designed as \\begin{equation} p_i(bid) = \\max_{\\omega \\in \\Omega}\\sum_{j \\neq i }{bid_j(\\omega)} - \\sum_{j \\neq i }{bid_j(\\omega^{*})}, \\end{equation} where $\\omega^*=X(bid)$, in order to charge bidder (player) $i$ for its externality.",
+    "inLanguage" : "en-us",
+    "author" : "Lucile Yang",
+    "creator" : "Lucile Yang",
+    "publisher": "Lucile Yang",
+    "accountablePerson" : "Lucile Yang",
+    "copyrightHolder" : "Lucile Yang",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-10-02 18:29:38 \u002b0800 CST",
+    "dateModified" : "2021-10-02 18:29:38 \u002b0800 CST",
+    "url" : "https:\/\/lucileee5657.github.io\/2021\/game_theory_1\/",
+    "wordCount" : "585",
+    "keywords" : [ "Course","Game Theory","Blog", "Lucileee Homepage"]
+}
+</script>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://lucileee5657.github.io">Lucileee Homepage</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/about/" title="">About Me</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://lucileee5657.github.io">Lucileee Homepage</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/about/" title="">About Me</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Game Theory part 1</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://lucileee5657.github.io" rel="author">Lucile Yang</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2021-10-02 itemprop="datePublished">October 2, 2021</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://lucileee5657.github.io/categories/uncategorized/"> Uncategorized </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h2 id="the-vcg-auction">The VCG Auction</h2>
+<p>A VCG mechanism consists of $n$ strategic players and a finite set $\Omega$  of possible auction outcomes. Each player $i$ has a private valuation $v_i(\omega)$ for each outcome $\omega \in \Omega $. If assumed truthful bids, the allocation rule is to select an outcome $\omega^*=X(bid)$ that maximizes the sum of bids.
+\begin{equation}
+X(bid) = \arg\max_{\omega\in\Omega}{\sum_{i=1}^n{bid_i(\omega)}}.
+\end{equation}
+Then, the payment function is designed as
+\begin{equation}
+p_i(bid) = \max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)} - \sum_{j \neq i }{bid_j(\omega^{*})},
+\end{equation}
+where $\omega^*=X(bid)$, in order to charge bidder (player) $i$ for its externality. This would make bidders tend to bid the true valuations as their dominant strategy.
+As a result, the utility (u_i(\omega)) for each bidder $i$ in outcome $\omega$ will be their private value minus their VCG payment as
+\begin{equation}
+u_i(\omega) = v_i(\omega) - p_i(bid).
+\end{equation}</p>
+<h3 id="properties-for-vcg">Properties for VCG</h3>
+<p>Recall that the VCG mechanism is to (1) assume truthful bidding, pick the welfare-maximizing outcome due to the demand for welfare maximization, and (2) define a payment rule that leads to a DSIC mechanism. Besides, it also guaranteed us individual rationality (utilities of players are not negative) and weakly budget balance (total payment to central(auctioneer) is not negative).</p>
+<h4 id="social-surplus-maximization">Social Surplus Maximization</h4>
+<p>We can get social surplus maximized since we define our allocation rule as directly pick the welfare-maximizing outcome.</p>
+<h4 id="truthful-bidding-dsic">Truthful bidding (DSIC)</h4>
+<p>If we fix bidder $i$ and the bids of other bidders $bid_{-i}$, when the outcome $X(bid)$ chosen by the allocation rule is $\omega^*$, bidder $i$&rsquo;s utility would be<br>
+\begin{equation*} \label{eq1}
+\begin{split}
+u_i(\omega^*) &amp; = v_i(\omega^*) - p_i(bid)  \<br>
+&amp; = \Big[v_i(\omega^*)\Big] - \Big[\max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)} - \sum_{j \neq i }{bid_j(\omega^{*})}\Big]  \<br>
+&amp; = \Big[v_i(\omega^*) +  \sum_{j \neq i }{bid_j(\omega^{*})}\Big] - \Big[\max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)}\Big].
+\end{split}
+\end{equation*}</p>
+<p>Note that the term in the second bracket is independent of what bidder $i$ bids, so the utility-maximizing problem reduces to maximizing the terms in the first bracket. If bidder $i$ bids $bid_i = v_i$, then the terms in the first bracket will be identical to what the mechanism wants to maximize in eq.(1). Hence, we know that bidding truthfully would result in the VCG mechanism choosing an outcome that not only maximizes welfare but also maximizes bidder $i$&rsquo;s utility.</p>
+<h4 id="individual-rationality">Individual Rationality</h4>
+<p>Individual rationality is also a property that the VCG mechanism guaranteed. Followed by the terms above and if bidder $i$ bids $bid_i = v_i$ ,
+\begin{equation*}
+\begin{split}
+u_i(\omega^*) &amp; = v_i(\omega^*) - p_i(bid)  \<br>
+&amp; = \sum_{j}{bid_j(\omega^{*})} - \max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)}.
+\end{split}
+\end{equation*}
+Then, since $\omega^*$ is the outcome that maximizes social welfare, $$\sum_{j}{bid_j(\omega^{*})} \geq  \sum_{j}{bid_j(\omega)}, \forall  \omega \in \Omega, \omega \neq \omega^{*}.$$
+And from *no negative externalities*, which means that the utility of any choice that each player can make without the player&rsquo;s participation is zero or positive, $bid_i(\omega) \geq 0$, we can get $$\sum_{j}{bid_j(\omega^{*})} \geq \max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)},$$ thus  $u_i(\omega^*)$ is non-negative.</p>
+<h4 id="weakly-budget-balance">Weakly Budget Balance</h4>
+<p>VCG mechanism also provides weakly budget balance property when the <em>no single-agent effect</em> holds. If bidder $i$ bids $bid_i = v_i$,
+\begin{equation*}
+\begin{split}
+\sum_{i}{p_i(bid)} &amp; = \sum_{i}{\Big[\max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)} - \sum_{j \neq i }{bid_j(\omega^{*})}\Big] }.
+\end{split}
+\end{equation*}
+By no single-agent effect property, that is, the sum of welfares of agents without $i$ is weakly increased by dropping $i$ from the auction, $$\max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)} \geq \sum_{j \neq i }{bid_j(\omega^{*})} \ , \forall i .$$ We prove that the sum of transfers (payments) from bidders to the center is non-negative.</p>
+<h2 id="concerns">Concerns</h2>
+<ul>
+<li>Complexity</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Lucile Yang </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://lucileee5657.github.io/2021/game_theory_1/>https://lucileee5657.github.io/2021/game_theory_1/</span>
+            </p>
+            
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/course/">
+                    #Course</a></span>
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/game-theory/">
+                    #Game Theory</a></span>
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/blog/">
+                    #Blog</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://lucileee5657.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://lucileee5657.github.io/2021/exchange_1/" class="prev" rel="prev" title="Exchange to CTIS in Bilkent, Turkey"><i class="iconfont icon-left"></i>&nbsp;Exchange to CTIS in Bilkent, Turkey</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://lucileee5657.github.io">Lucile Yang</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
