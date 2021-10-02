@@ -6,39 +6,7 @@
     <description>Recent content in Posts on Lucileee Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Oct 2021 18:29:38 +0800</lastBuildDate><atom:link href="https://lucileee5657.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Game Theory part 1</title>
-      <link>https://lucileee5657.github.io/2021/game_theory_1/</link>
-      <pubDate>Sat, 02 Oct 2021 18:29:38 +0800</pubDate>
-      
-      <guid>https://lucileee5657.github.io/2021/game_theory_1/</guid>
-      <description>The VCG Auction A VCG mechanism consists of $n$ strategic players and a finite set $\Omega$ of possible auction outcomes. Each player $i$ has a private valuation $v_i(\omega)$ for each outcome $\omega \in \Omega $. If assumed truthful bids, the allocation rule is to select an outcome $\omega^*=X(bid)$ that maximizes the sum of bids. \begin{equation} X(bid) = \arg\max_{\omega\in\Omega}{\sum_{i=1}^n{bid_i(\omega)}}. \end{equation} Then, the payment function is designed as \begin{equation} p_i(bid) = \max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)} - \sum_{j \neq i }{bid_j(\omega^{*})}, \end{equation} where $\omega^*=X(bid)$, in order to charge bidder (player) $i$ for its externality.</description>
-    </item>
-    
-    <item>
-      <title>Exchange to CTIS in Bilkent, Turkey</title>
-      <link>https://lucileee5657.github.io/2021/exchange_1/</link>
-      <pubDate>Sat, 02 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://lucileee5657.github.io/2021/exchange_1/</guid>
-      <description>Why Turkey There are so many schools, countries in the exchange program. Why did I choose Bilkent in Turkey?
- Budget: Devaluation of the Turkish Lira Culture: Experience Middle East and Islamic culture History: Prehistoric, Roman, Seljuk, Ottoman Empire Landscape: Like Cappadocia, Pamukkale&amp;hellip;etc.  &amp;ndash;
- 對我來說，土耳其一直是個謎，想去探秘的念頭由來已久。於是，我和我的旅伴們相約來到「文明的搖籃」——土耳其 伊斯坦堡是世界上唯一一座既做過基督教帝國首都、又做過伊斯蘭教帝國首都的城市。也是東西方世界神奇的交匯點，通過博斯普魯斯海峽橫跨歐亞大陸。在這個大約有1000座清真寺、500個東政教堂的城市，你永遠也不用擔心會視覺疲勞。
-        About school classes What’s the differences between courses I took in Taiwan and in Turkey?</description>
-    </item>
-    
-    <item>
-      <title>My Internship in Logitech EE Team</title>
-      <link>https://lucileee5657.github.io/2021/intern-logi/</link>
-      <pubDate>Sat, 02 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://lucileee5657.github.io/2021/intern-logi/</guid>
-      <description>Goal Developed an improvement proposal for the Logitech G915 TKL keyboard based on brainstorming, cross-team discussions and user interviews
- Look cool Better user experience Practicality  Mothod Disassembled the model, added firmware codes, and modified the circuit board to build a prototype.
-Timeline What I&amp;rsquo;ve learned  Know the responsibilities of various departments of the company and relationships between them. Know more about the process of product development Know the importance of user needs and the market structure Familiar with the working mode that requires cooperation between different departments Review C/C++ Learn presentation skills Practice communication and expressing ideas in English  </description>
-    </item>
-    
+    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lucileee5657.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog with Github and Hugo on Mac</title>
       <link>https://lucileee5657.github.io/2021/my-first-post/</link>
@@ -46,6 +14,101 @@ Timeline What I&amp;rsquo;ve learned  Know the responsibilities of various depar
       
       <guid>https://lucileee5657.github.io/2021/my-first-post/</guid>
       <description>Start with Hugo Install Hugo install from brew brew install hugo check version hugo version Create new website new hugo website folder hugo new site website-hugo cd website-hugo download theme (here we use LeaveIT) git clone https://github.com/liuzc/LeaveIt.git themes/LeaveIt copy themes/LeaveIt/layouts to current root folder cp -r themes/LeaveIt/layouts . copy resources from theme/LeaveIt/exampleSite to current root folder cp -r themes/LeaveIt/exampleSite/static/ static/ cp -r themes/LeaveIt/exampleSite/content/ content/ cp -r themes/LeaveIt/exampleSite/resources/ resources/ cp -r themes/LeaveIt/exampleSite/config.</description>
+    </item>
+    
+    <item>
+      <title>Game Theory part 1</title>
+      <link>https://lucileee5657.github.io/2021/game_theory_1/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2021/game_theory_1/</guid>
+      <description>The VCG Auction A VCG mechanism consists of $n$ strategic players and a finite set $\Omega$ of possible auction outcomes. Each player $i$ has a private valuation $v_i(\omega)$ for each outcome $\omega \in \Omega $. If assumed truthful bids, the allocation rule is to select an outcome $\omega^*=X(bid)$ that maximizes the sum of bids. \begin{equation} X(bid) = \arg\max_{\omega\in\Omega}{\sum_{i=1}^n{bid_i(\omega)}}. \end{equation} Then, the payment function is designed as \begin{equation} p_i(bid) = \max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)} - \sum_{j \neq i }{bid_j(\omega^{*})}, \end{equation} where $\omega^*=X(bid)$, in order to charge bidder (player) $i$ for its externality.</description>
+    </item>
+    
+    <item>
+      <title>My Internship in Logitech EE Team</title>
+      <link>https://lucileee5657.github.io/2020/intern-logi/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2020/intern-logi/</guid>
+      <description>Goal Developed an improvement proposal for the Logitech G915 TKL keyboard based on brainstorming, cross-team discussions and user interviews
+ Look cool Better user experience Practicality  Mothod Disassembled the model, added firmware codes, and modified the circuit board to build a prototype.
+Timeline What I&amp;rsquo;ve learned  Know the responsibilities of various departments of the company and relationships between them. Know more about the process of product development Know the importance of user needs and the market structure Familiar with the working mode that requires cooperation between different departments Review C/C++ Learn presentation skills Practice communication and expressing ideas in English  </description>
+    </item>
+    
+    <item>
+      <title>Exchange to CTIS in Bilkent, Turkey</title>
+      <link>https://lucileee5657.github.io/2020/exchange_1/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2020/exchange_1/</guid>
+      <description>Why Turkey There are so many schools, countries in the exchange program. Why did I choose Bilkent in Turkey?
+ Budget: Devaluation of the Turkish Lira Culture: Experience Middle East and Islamic culture History: Prehistoric, Roman, Seljuk, Ottoman Empire Landscape: Like Cappadocia, Pamukkale&amp;hellip;etc.  &amp;ndash;
+ 對我來說，土耳其一直是個謎，想去探秘的念頭由來已久。於是，我和我的旅伴們相約來到「文明的搖籃」——土耳其 伊斯坦堡是世界上唯一一座既做過基督教帝國首都、又做過伊斯蘭教帝國首都的城市。也是東西方世界神奇的交匯點，通過博斯普魯斯海峽橫跨歐亞大陸。在這個大約有1000座清真寺、500個東政教堂的城市，你永遠也不用擔心會視覺疲勞。
+        About school classes What’s the differences between courses I took in Taiwan and in Turkey?</description>
+    </item>
+    
+    <item>
+      <title>My trip to Jordan (in Chinese) 約旦之前進沙漠與死海的大冒險</title>
+      <link>https://lucileee5657.github.io/2020/jordan_chinese/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucileee5657.github.io/2020/jordan_chinese/</guid>
+      <description>旅行的目的，大約在於看見更廣闊的世界，在歸途上成為一個更好的自己
+ Day 1 GO GO Jordan 約旦是個我一直都想去的國家，除了想一窺阿拉伯世界神秘面紗下的風采，更因為我對於沙漠旅行的迷之嚮往。
+從土耳其飛約旦的安檢異常嚴格，不僅在正常安檢流程時一定會開手提行李，檢查得特別詳細，登機門之前還要再搜身搜行李一次。
+終於登上飛機，坐在我和朋友旁邊的是一位在土耳其的某個聯合國組織下工作的敘利亞人。因為土耳其沒有飛敘利亞的航班，他必須先到約旦，然後再經過陸路交通回到敘利亞，過程之麻煩與艱辛實在令人難以想像。
+降落後出了機場，旁邊便有計程車招呼站（也就是包車有公道價的地方），一般來說，在這邊包車會比直接跟網路上或是路邊找的包車司機便宜有保障，約旦境內著名的旅遊地點的價格都在旁邊的表格上。
+在約旦包車，司機的英文素質參差不齊，有些講得很流利，有些連基本的溝通都不太行。不過，他們通常都會有語音翻譯，所以不用擔心溝通的問題。
+在包車從機場直奔佩特拉的路上，司機還請我們喝了貝都因紅茶跟咖啡，努力用翻譯跟我們介紹風景還有聊天。老實說，我覺得阿拉伯咖啡跟土耳其咖啡差不多，都是喝到最後會有咖啡渣而且不加糖真的很苦的那種。
+準備隔天早上起來直奔瓦地倫沙漠。
+Day 2 Wadi Rum 原本昨天天氣晴朗到還可以看到夕陽，今天早上起來灰朦朦不說，居然還飄雪！真的讓人很擔心到時候沙漠的情況，畢竟平常的沙漠就已經是朝穿皮襖午穿沙，抱著火爐吃西瓜了，真不知道冬天會是怎樣嚴峻的天氣。
+瓦地倫沙漠最特別的地方在於，他的沙是橘紅以及粉紅色的，跟我之前在鳴沙山月牙泉看到的差很多。
+不過幸運的是，在快到沙漠的時候，因為太陽雪，甚至出現了彩虹。
+一般的沙漠旅程都是坐在小卡車的後座，但朋友和可以我坐了一段路之後果斷放棄，風真的大到人快被吹歪不說，冷到發抖還是其次，最重要的是眼睛根本睜不開，完全無法看風景嗚嗚嗚。
+還好導遊哥哥人很好，把他放在後座的東西都拿出來，讓我們可以進到車裡。
+感覺是改裝過的Toyota，車舊舊的，我都很擔心到底發不發得動。
+雖然天氣陰陰的，沒有漂亮的藍天白雲，仍然無損瓦地倫的美麗。
+導遊哥哥說，這就是沙漠。你在一天內會經歷四季，經歷各種極端天氣以及各種措手不及。
+住在沙漠中的人，往往比城市中的我們，更加清楚大自然的力量和殘酷。
+就像人生，或許上一秒晴空萬里，或許下一秒就電閃雷鳴。
+唯一能做的，大約就是逆著風，也要繼續往前行。畢竟，我們永遠不知道，驚喜會不會突然出現。
+我們一開始先騎駱駝，這裡的駱駝很高很可怕，而且牠還一直想低頭吃草&amp;hellip;
+幫我和朋友牽駱駝的是一個十歲的貝都因男孩，因為約旦的週末是星期五星期六，他這天剛好放假，就來幫家裡打打工。
+他們從小培養，如果跟駱駝關係好的話，長大後可以繼承家業。所以導遊說他們不是長大後才找工作，而是從小發掘，這樣等到從學校畢業就可以直接賺錢了。
+之後還去了很多景點，一天玩下來真的是頗累，因為瓦地倫有很多峽谷、石橋，都很壯觀，為了看到好風景，就要一直爬上爬下。
+而在沙地上走路往往比平地更艱難，常常是往上走一步，就往下滑半步&amp;hellip;&amp;hellip;
+老實說，實在是有點難想像這樣的沙漠很久以前是有河流經過的，並且切割成這麼多壯麗的景觀。
+然而，快樂的時光總是過的特別快，黃昏時，行程已經接近尾聲，導遊找了個面向西方的位置帶我們看日落。
+在背風處，升起一個小火堆，既可以取暖，還可以煮上一壺熱熱的貝都因紅茶，聊天吃點心看日落，實乃人生一大樂事。
+親眼看見導遊加了一堆糖，貝都因紅茶雖然超級甜，卻是一種甜到心坎裡這輩子大概不會忘記的味道。
+和導遊哥哥閒聊的過程中，知道他已經訂婚了。
+貝都因人雖然可以娶四個妻子，但娶妻的過程就跟打怪升級一樣，非常不容易。
+首先，你要先找到工作，想辦法開始存錢，再來，你要開始準備婚房，不管是自己蓋還是用買的，然後有了未婚妻之後還要給女方一筆錢，有點像是中國古代的聘禮，最後你還需要籌備婚禮，婚禮的所有開銷也都是你要準備。
+導遊哥哥說他娶一個就夠了，但我猜他也不一定多專情，就是齊人之福不是人人都消受的了。
+雖然因為雲層很多，沒有看到網路上的粉色天空，卻蠻幸運地看到了雲上太陽。陽光透過雲層照射下來，有種天使降臨人間的神聖感。
+天空完全暗下來之後，我們回到帳篷區準備迎接晚餐。
+他們在沙漠煮晚餐的方式有點像是台灣的控窯，把一個鐵鍋埋進沙裡，鐵鍋裡有分很多層，可是放不同食物，然後生火燜熟。
+如果是夏天，就可以在戶外圍著篝火邊看漫天星斗邊吃晚餐；而因為我們是冬天去，就變成是在帳篷裡面生火，喝熱茶吃晚餐。
+其實我後來覺得，如果天冷的時候去瓦地倫，可以玩白天就好，不一定要像我們一樣待滿一天一夜。
+冬天的晚上有沒有星星真的很靠運氣，而且帳篷裡真的超級超級冷。我蓋了三件毯子差點夢到鬼壓床還是好冷，瑟瑟發抖那種，甚至半夜也不太敢出去上廁所。
+幸運的是，隔天早上起床之後，太陽終於出來了，也讓我們能夠一睹瓦地倫在陽光之下的風采。
+Day 3 Petra 這天我們安排整天都在佩特拉古城。
+佩特拉通常被認為是納巴特王國的首都，估計建於西元前六世紀之後，可能是前二到三世紀吧！大約是埃及托勒密王朝時期（就是埃及豔后克利歐帕特拉的那個托勒密哦！） 之後被羅馬帝國攻陷成為行省，然而可能是因為紅海海上貿易興盛，陸路貿易的繁榮不再，等七世紀阿拉伯軍隊征服時，已經是空城了，瞬間覺得很有歷史感哈哈哈。
+佩特拉的建築是認真很美，岩石有褐色紅色淡藍黃色紫色等等，尤其是要爬上最後一個Monastery沿路，整片都是紛紛紫紫的，如果忽略驢子屎的話真的會被美哭。
+一開始進園區之後會有人叫你去騎馬，說會送你到蛇道的入口，並且告訴你是免費的，已經包含在門票裡了，記得，千萬別相信他們！說是免費，但在你下馬之後他們會跟你收高額小費，而且那段路不但下坡還沒有很長，自己走走晃晃就到了，完全沒必要花冤枉錢。
+蛇道是一整條很長的峽谷，跟整個佩特拉一樣，擁有漸層顏色的岩石，陽光從頭頂灑下，美不勝收。
+蛇道的盡頭便是卡茲尼神殿，也是來佩特拉必看的景點，我們爬上旁邊的岩石，剛好捕捉到陽光從神殿斜上方照過來的瞬間。
+安利一下唉鳳X，逆光拍照的功能扛扛的，照出來不但人像清晰，還有美美的光圈。
+繼續往前走，值得一看的還有劇院和皇家墓葬群，全部都是沿著山壁雕刻鑿出的建築，天花板的漸層色最讓人驚嘆。
+每次在看這些西元前到建築時，都不得不佩服古人的智慧和工藝。
+那可是西元前呢，一個沒有電沒有自來水沒有汽車飛機的年代，卻能擁有金子塔、瑪雅預言、馬丘比丘、各種精美神殿、三星堆遺址&amp;hellip;&amp;hellip;以及佩特拉古城，想想就很神奇。
+繼續往前走，會到整個古城裡唯一一區不是以山壁為主題的建築，羅馬行省時代的柱廊大街和劇院。
+最後一個景點就是Monastery修道院，在步道下面希望你騎驢子的小販會跟你說要爬一小時，但我自己實際計時發現我才花了半小時（不過也可能是體力原因因人而異），而且冬天大概比夏天容易爬，至少不會汗如雨下。
+沿路都是漂亮的山壁，連腳下踏的石頭都是漂亮的粉紅和粉紫色。
+唯一煞風景的就是的上真的超多驢子屎，爬的時候除了要小心腳下樓梯不要踩空，還要小心驢子黃金以及迎面而來的驢子。我之前有一個朋友來，就是爬得太專心差點跟驢子相撞&amp;hellip;&amp;hellip;
+爬到修道院差不多是夕陽落下的時候，整個山壁都是金黃色，十分壯觀。
+有時候，會異想天開地想，要是世界上有時光機就好了，不是要改變曾經發生的歷史，只是希望能夠親眼見證曾經的輝煌。</description>
     </item>
     
   </channel>

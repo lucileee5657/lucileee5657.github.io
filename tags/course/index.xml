@@ -6,11 +6,11 @@
     <description>Recent content in Course on Lucileee Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Oct 2021 18:29:38 +0800</lastBuildDate><atom:link href="https://lucileee5657.github.io/tags/course/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lucileee5657.github.io/tags/course/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game Theory part 1</title>
       <link>https://lucileee5657.github.io/2021/game_theory_1/</link>
-      <pubDate>Sat, 02 Oct 2021 18:29:38 +0800</pubDate>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://lucileee5657.github.io/2021/game_theory_1/</guid>
       <description>The VCG Auction A VCG mechanism consists of $n$ strategic players and a finite set $\Omega$ of possible auction outcomes. Each player $i$ has a private valuation $v_i(\omega)$ for each outcome $\omega \in \Omega $. If assumed truthful bids, the allocation rule is to select an outcome $\omega^*=X(bid)$ that maximizes the sum of bids. \begin{equation} X(bid) = \arg\max_{\omega\in\Omega}{\sum_{i=1}^n{bid_i(\omega)}}. \end{equation} Then, the payment function is designed as \begin{equation} p_i(bid) = \max_{\omega \in \Omega}\sum_{j \neq i }{bid_j(\omega)} - \sum_{j \neq i }{bid_j(\omega^{*})}, \end{equation} where $\omega^*=X(bid)$, in order to charge bidder (player) $i$ for its externality.</description>
