@@ -13,7 +13,8 @@
       <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://lucileee5657.github.io/2021/dnn_partition/</guid>
-      <description>Model-level task decomposition  Inference the models in the task pipeline on different computing devices  Layer-level task decomposition  Run the inference of different layers in a single DL model on different computing devices Motivated by the difference of output data size between each DL layer → lead to different requirements of the networking resource    In the case of a single model with fixed variables, if the network situation and the capabilities of devices are known, we can find the best point for layer-level decomposition.</description>
+      <description>Model-level task decomposition  Inference the models in the task pipeline on different computing devices  From: Y. Zhang, J.-H. Liu, C.-Y. Wang, and H.-Y. Wei, “Decomposable intelligence on cloud-edge iot framework for live video analytics,”IEEE Internet of Things Journal, vol. 7, no. 9, pp. 8860–8873, 2020.
+Papers:  C.-C. Hung, G. Ananthanarayanan, P. Bodik, L. Golubchik, M. Yu,P. Bahl, and M. Philipose, “Videoedge: Processing camera streams using hierarchical clusters,” in 2018 IEEE/ACM Symposium on Edge Computing (SEC), 2018, pp.</description>
     </item>
     
   </channel>

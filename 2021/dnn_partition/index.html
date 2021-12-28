@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "DNN_partition",
     "headline" : "DNN_partition",
-    "description" : "Model-level task decomposition  Inference the models in the task pipeline on different computing devices  Layer-level task decomposition  Run the inference of different layers in a single DL model on different computing devices Motivated by the difference of output data size between each DL layer → lead to different requirements of the networking resource    In the case of a single model with fixed variables, if the network situation and the capabilities of devices are known, we can find the best point for layer-level decomposition.",
+    "description" : "Model-level task decomposition  Inference the models in the task pipeline on different computing devices  From: Y. Zhang, J.-H. Liu, C.-Y. Wang, and H.-Y. Wei, “Decomposable intelligence on cloud-edge iot framework for live video analytics,”IEEE Internet of Things Journal, vol. 7, no. 9, pp. 8860–8873, 2020.\nPapers:  C.-C. Hung, G. Ananthanarayanan, P. Bodik, L. Golubchik, M. Yu,P. Bahl, and M. Philipose, “Videoedge: Processing camera streams using hierarchical clusters,” in 2018 IEEE\/ACM Symposium on Edge Computing (SEC), 2018, pp.",
     "inLanguage" : "en-us",
     "author" : "Lucile Yang",
     "creator" : "Lucile Yang",
@@ -57,7 +57,7 @@
     "datePublished": "2021-03-05 00:00:00 \u002b0000 UTC",
     "dateModified" : "2021-03-05 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/lucileee5657.github.io\/2021\/dnn_partition\/",
-    "wordCount" : "128",
+    "wordCount" : "551",
     "keywords" : [ "Paper","DL","Blog", "Lucileee Homepage"]
 }
 </script>
@@ -166,8 +166,14 @@
 <ul>
 <li>Inference the models in the task pipeline on different computing devices</li>
 </ul>
-<p><img src="/images/blog_post/dice.png" alt="DICE-IoT"></p>
-<h2 id="layer-level-task-decomposition">Layer-level task decomposition</h2>
+<p><img src="/images/blog_post/dice.png" alt="DICE-IoT">
+From: Y.  Zhang,  J.-H.  Liu,  C.-Y.  Wang,  and  H.-Y.  Wei,  “Decomposable intelligence on cloud-edge iot framework for live video analytics,”IEEE Internet of Things Journal, vol. 7, no. 9, pp. 8860–8873, 2020.</p>
+<h3 id="papers">Papers:</h3>
+<ul>
+<li>C.-C.  Hung,  G.  Ananthanarayanan,  P.  Bodik,  L.  Golubchik,  M.  Yu,P.  Bahl,  and  M.  Philipose,  “Videoedge:  Processing  camera  streams using  hierarchical  clusters,”  in 2018  IEEE/ACM  Symposium  on  Edge Computing (SEC), 2018, pp. 115–131.</li>
+<li>Y.  Zhang,  J.-H.  Liu,  C.-Y.  Wang,  and  H.-Y.  Wei,  “Decomposable intelligence on cloud-edge iot framework for live video analytics,”IEEE Internet of Things Journal, vol. 7, no. 9, pp. 8860–8873, 2020.</li>
+</ul>
+<h2 id="layer-level-decomposition">Layer-level decomposition</h2>
 <ul>
 <li>Run the inference of different layers in a single DL model on different computing devices</li>
 <li>Motivated by the difference of output data size between each DL layer →  lead to different requirements of the networking resource</li>
@@ -183,7 +189,31 @@ Ex:
 <p>When the network situation is unknown, there may be <strong>multiple possible locations</strong> where partitions can be made, and if there are multiple kinds of tasks, multiple choices of models with different parameter settings that lead to different accuracy, it will be much more complicated</p>
 </li>
 </ul>
-<p><img src="/images/blog_post/3gpptr.png" alt="3gpptr"></p>
+<p><img src="/images/blog_post/3gpptr.png" alt="3gpptr">
+From: 3GPP,  “5G  System  (5GS);  Study  on  traffic  characteristics  and  performance  requirements  for  AI/ML  model  transfer,”  3rd  Generation Partnership Project (3GPP), Technical Report (TR) 22.874</p>
+<h3 id="papers-1">Papers</h3>
+<ul>
+<li>J. Zhou, Y. Wang, K. Ota, and M. Dong, “Aaiot: Accelerating artificial intelligence  in  iot  systems,”IEEE  Wireless  Communications  Letters,vol. 8, no. 3, pp. 825–828, 2019.</li>
+<li>E. Li, L. Zeng, Z. Zhou, and X. Chen, “Edge ai: On-demand accelerating deep neural network inference via edge computing,”IEEE Transactionson Wireless Communications, vol. 19, pp. 447–457, 2020.</li>
+<li>L.  Zeng,  E.  Li,  Z.  Zhou,  and  X.  Chen,  “Boomerang:  On-demand cooperative deep neural network inference for edge intelligence on the industrial internet of things,”IEEE Network, vol. 33, no. 5, pp. 96–103,2019.</li>
+<li>C. Hu, W. Bao, D. Wang, and F. Liu, “Dynamic adaptive dnn surgery for inference  acceleration  on  the  edge,”  in IEEE  INFOCOM  2019  -  IEEE Conference on Computer Communications, 2019, pp. 1423–1431.</li>
+</ul>
+<h2 id="parallel-decomposition">Parallel decomposition</h2>
+<ul>
+<li>parallel decomposition divides the input data frame into several patches and performs the inference computation in parallel on different devices.</li>
+</ul>
+<h3 id="papers-2">Papers</h3>
+<ul>
+<li>Z. Zhao, K. M. Barijough, and A. Gerstlauer, “Deepthings: Distributed adaptive   deep   learning   inference   on   resource-constrained   iot   edge clusters,”IEEE  Transactions  on  Computer-Aided  Design  of  Integrated Circuits and Systems, vol. 37, no. 11, pp. 2348–2359, 2018.</li>
+<li>R.  Hadidi,  J.  Cao,  M.  S.  Ryoo,  and  H.  Kim,  “Toward  collaborative inferencing of deep neural networks on internet-of-things devices,”IEEE Internet of Things Journal, vol. 7, no. 6, pp. 4950–4960, 2020.</li>
+<li>L. Zeng, X. Chen, Z. Zhou, L. Yang, and J. Zhang, “Coedge: Cooperative dnn  inference  with  adaptive  workload  partitioning  over  heterogeneous edge devices,”IEEE/ACM Trans. Netw., vol. 29, no. 2, p. 595–608, apr2021. [Online]. Available: <a href="https://doi.org/10.1109/TNET.2020.3042320">https://doi.org/10.1109/TNET.2020.3042320</a></li>
+</ul>
+<h2 id="both-parallel-and-layer-level">Both parallel and layer-level</h2>
+<h3 id="papers-3">Papers</h3>
+<ul>
+<li>T.  Mohammed,  C.  Joe-Wong,  R.  Babbar,  and  M.  D.  Francesco,  “Distributed  inference  acceleration  with  adaptive  dnn  partitioning  and  offloading,”  in IEEE  INFOCOM  2020  -  IEEE  Conference  on  ComputerCommunications, 2020, pp. 854–863.</li>
+<li>E.  Kilcioglu,  H.  Mirghasemi,  I.  Stupia,  and  L.  Vandendorpe,  “An energy-efficient  fine-grained  deep  neural  network  partitioning  scheme for  wireless  collaborative  fog  computing,”IEEE  Access,  vol.  9,  pp.79611–79627, 2021.</li>
+</ul>
 
     </div>
 
