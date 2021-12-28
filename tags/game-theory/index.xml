@@ -13,8 +13,8 @@
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://lucileee5657.github.io/2021/game_theory_2/</guid>
-      <description>Introduction Def A coalitional game (or a game in coalitional form) is defined by the pair (N, v), where N is the set of players, and v is a mapping that determines the payoffs that these players receive in the game.
-Def the characteristic function of a coalitional game with transferable utility is a function v over the real line defined a $v: 2^N -&amp;gt; \R$ with $v(\phi) = 0$</description>
+      <description>Some notes after reading:
+ Han, Z., Niyato, D., Saad, W., Başar, T., &amp;amp; Hjørungnes, A. (2011). Game Theory in Wireless and Communication Networks: Theory, Models, and Applications. Cambridge: Cambridge University Press. doi:10.1017/CBO9780511895043  Introduction Def A coalitional game (or a game in coalitional form) is defined by the pair (N, v), where N is the set of players, and v is a mapping that determines the payoffs that these players receive in the game.</description>
     </item>
     
     <item>

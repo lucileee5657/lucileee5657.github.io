@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Lucile Yang">
+  
+  
+  
+  <link rel="prev" href="https://lucileee5657.github.io/2021/game_theory_2/" />
+  
+  <link rel="canonical" href="https://lucileee5657.github.io/2021/dlcv_note/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Notes for DLCV (CommE5052) | Lucileee Homepage
+       
+  </title>
+  <meta name="title" content="Notes for DLCV (CommE5052) | Lucileee Homepage">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/lucileee5657.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "Notes for DLCV (CommE5052)",
+    "headline" : "Notes for DLCV (CommE5052)",
+    "description" : "notes are mainly from DLCV 2021 (NTU COMME5052)\nFor DNN For weight in $y = W * x \u002b b$  $W_i$看起來很像所有類別$i$的trainin data平均的結果 ($W$ can be viewed as an examplar of the corresponding class) since $y_1 = W_1^T * x \u002b b_1, \u0026hellip;\u0026hellip;, y_n = W_n^T * x \u002b b_n$ for $n$ class classification 內積大，代表做內積的兩個vector相像  Why softmax? ==\u0026gt; interpret classifier scores as probabilities $$P(Y=k|X=x_i) = \\frac{exp(s_k)}{\\sum_{j}{exp(s_j)}}$$ with $s = f(x_i;W)$ as classifier output",
+    "inLanguage" : "en-us",
+    "author" : "Lucile Yang",
+    "creator" : "Lucile Yang",
+    "publisher": "Lucile Yang",
+    "accountablePerson" : "Lucile Yang",
+    "copyrightHolder" : "Lucile Yang",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-10-05 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-10-05 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/lucileee5657.github.io\/2021\/dlcv_note\/",
+    "wordCount" : "240",
+    "keywords" : [ "Course","DL","Blog", "Lucileee Homepage"]
+}
+</script>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://lucileee5657.github.io">Lucileee Homepage</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/about/" title="">About Me</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://lucileee5657.github.io">Lucileee Homepage</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/about/" title="">About Me</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Notes for DLCV (CommE5052)</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://lucileee5657.github.io" rel="author">Lucile Yang</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2021-10-05 itemprop="datePublished">October 5, 2021</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://lucileee5657.github.io/categories/uncategorized/"> Uncategorized </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p>notes are mainly from DLCV 2021 (NTU COMME5052)</p>
+<h2 id="for-dnn">For DNN</h2>
+<h3 id="for-weight-in-y--w--x--b">For weight in $y = W * x + b$</h3>
+<ul>
+<li>$W_i$看起來很像所有類別$i$的trainin data平均的結果
+($W$ can be viewed as an examplar of the corresponding class)
+since $y_1 = W_1^T * x + b_1, &hellip;&hellip;, y_n = W_n^T * x + b_n$ for $n$ class classification
+內積大，代表做內積的兩個vector相像</li>
+</ul>
+<h3 id="why-softmax">Why softmax?</h3>
+<p>==&gt; <strong>interpret classifier scores as probabilities</strong>
+$$P(Y=k|X=x_i) = \frac{exp(s_k)}{\sum_{j}{exp(s_j)}}$$ with $s = f(x_i;W)$ as classifier output</p>
+<ul>
+<li>exp &ndash;&gt; change value to positive</li>
+<li>normalize &ndash;&gt; sum = 1</li>
+</ul>
+<h3 id="loss-function-why--log">Loss function why -log</h3>
+<ul>
+<li>$L_i = -log(1) = 0$ ==&gt; predict很好的話，loss會是0</li>
+<li>$L_i = -log(0.00001) -&gt; \infty$ ==&gt; predict很差的話，loss會超大</li>
+</ul>
+<h4 id="cross-entropy-loss">Cross-Entropy loss</h4>
+<p>==&gt; How similar the predicted vector and the truth vector look like?</p>
+<h3 id="gradient-descent-vs-stochastic-gradient-descent">Gradient Descent v.s. <strong>Stochastic</strong> Gradient Descent</h3>
+<ul>
+<li>GD: using all training data for updaing gradient per iteration</li>
+<li>SGD: only using minibatch of training data per iteration (re-sampled the batch of data for every iter)</li>
+</ul>
+<h3 id="why-sigmoid">Why Sigmoid?</h3>
+<p>$$\sigma(t) = \frac{1}{1+e^{-t}}$$
+==&gt; from linear to non-linear
+Non-linear疊加多層NN才有意義，否則若都是linear的話，$W_1 \times W_2 \times W_3$直接用成一個大$W$就好</p>
+<h3 id="why-multi-layer">Why multi-layer?</h3>
+<p>讓資料可以分的更好</p>
+<h3 id="input-output-function-of-single-neuron">Input-output function of single neuron</h3>
+<p><img src="/images/blog_post/nn_1.jpeg" alt="example"></p>
+<h3 id="why-regularization">Why regularization?</h3>
+<p>$$E(w) = 1/2 \sum_{i}{w_i^2}$$
+==&gt; regulariser discourages the network using extreme weights
+==&gt; to avoid **overfitting**</p>
+<h2 id="for-cnn">For CNN</h2>
+<ul>
+<li>Property 1: local connectivity ==&gt; only care about a small region in an image one time</li>
+<li>Property 2: weight sharing (左眼右眼都是眼睛，或許可以share weight)</li>
+</ul>
+<h3 id="convolution-意義">Convolution 意義</h3>
+<p>==&gt; weighted moving sum
+很像filter跟後面那小塊圖片做內積，而當二者很像時，內積會接近1
+也就是在input圖片上找和filter相似的pattern</p>
+<p><img src="/images/blog_post/cnn_1.jpeg" alt="example">
+<img src="/images/blog_post/cnn_2.jpeg" alt="example">
+<img src="/images/blog_post/cnn_3.jpeg" alt="example"></p>
+<h3 id="why-padding">Why padding?</h3>
+<p>為了讓圖片邊界也被掃到，也為了不讓output feature map shrink</p>
+<h3 id="why-stride">Why stride?</h3>
+<p>一次多走幾步</p>
+<h3 id="output-size">Output size?</h3>
+<p>$$\frac{W+2p-k}{S}+1$$
+[(input_size + 2*padding - kernel_size)/stride] + 1</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Lucile Yang </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://lucileee5657.github.io/2021/dlcv_note/>https://lucileee5657.github.io/2021/dlcv_note/</span>
+            </p>
+            
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/course/">
+                    #Course</a></span>
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/dl/">
+                    #DL</a></span>
+            
+            <span class="tag"><a href="https://lucileee5657.github.io/tags/blog/">
+                    #Blog</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://lucileee5657.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://lucileee5657.github.io/2021/game_theory_2/" class="prev" rel="prev" title="Game Theory 2: Cooperative Games - Coalitional Game"><i class="iconfont icon-left"></i>&nbsp;Game Theory 2: Cooperative Games - Coalitional Game</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://lucileee5657.github.io">Lucile Yang</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
