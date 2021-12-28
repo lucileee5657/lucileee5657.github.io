@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "DNN_partition",
     "headline" : "DNN_partition",
-    "description" : "",
+    "description" : "Model-level task decomposition  Inference the models in the task pipeline on different computing devices  Layer-level task decomposition  Run the inference of different layers in a single DL model on different computing devices Motivated by the difference of output data size between each DL layer → lead to different requirements of the networking resource    In the case of a single model with fixed variables, if the network situation and the capabilities of devices are known, we can find the best point for layer-level decomposition.",
     "inLanguage" : "en-us",
     "author" : "Lucile Yang",
     "creator" : "Lucile Yang",
@@ -57,7 +57,7 @@
     "datePublished": "2021-03-05 00:00:00 \u002b0000 UTC",
     "dateModified" : "2021-03-05 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/lucileee5657.github.io\/2021\/dnn_partition\/",
-    "wordCount" : "0",
+    "wordCount" : "128",
     "keywords" : [ "Paper","DL","Blog", "Lucileee Homepage"]
 }
 </script>
@@ -148,6 +148,8 @@
         
 
         
+            
+        
 
         
         
@@ -160,7 +162,29 @@
           
           
 
-          
+          <h2 id="model-level-task-decomposition">Model-level task decomposition</h2>
+<ul>
+<li>Inference the models in the task pipeline on different computing devices</li>
+</ul>
+<p><img src="/images/blog_post/dice.png" alt="DICE-IoT"></p>
+<h2 id="layer-level-task-decomposition">Layer-level task decomposition</h2>
+<ul>
+<li>Run the inference of different layers in a single DL model on different computing devices</li>
+<li>Motivated by the difference of output data size between each DL layer →  lead to different requirements of the networking resource</li>
+</ul>
+<p><img src="/images/blog_post/yolov4output.png" alt="yolov4output"></p>
+<ul>
+<li>
+<p>In the case of a single model with fixed variables, if the network situation and the capabilities of devices are known, we can find the best point for layer-level decomposition.
+Ex:
+<img src="/images/blog_post/layer.png" alt="layer"></p>
+</li>
+<li>
+<p>When the network situation is unknown, there may be <strong>multiple possible locations</strong> where partitions can be made, and if there are multiple kinds of tasks, multiple choices of models with different parameter settings that lead to different accuracy, it will be much more complicated</p>
+</li>
+</ul>
+<p><img src="/images/blog_post/3gpptr.png" alt="3gpptr"></p>
+
     </div>
 
     <div class="post-copyright">
@@ -250,8 +274,9 @@
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
   
 
