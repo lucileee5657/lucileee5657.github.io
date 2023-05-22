@@ -23,10 +23,15 @@
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://lucileee5657.github.io/about/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hi! This is Lucile (Ya-Ting) Yang, a master&amp;rsquo;s student at the Graduate Institute of Communication Engineering of National Taiwan University. I got my bachelor&amp;rsquo;s degree in electrical engineering from National Tsing Hua University.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Hi! This is Lucile (Ya-Ting) Yang, a Ph.D. student in Electrical and Computer Engineering, New York University. I got my bachelor&amp;rsquo;s degree in electrical engineering from National Tsing Hua University and my master&amp;rsquo;s degree in Communication Engineering from National Taiwan University .&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;M.S. student in Graduate Institute of Communication Engineering, National Taiwan University (2020-now)&lt;/li&gt;
+&lt;li&gt;Ph.D. student in Electrical and Computer Engineering, New York University (2022-now)&lt;/li&gt;
+&lt;li&gt;M.S. student in Graduate Institute of Communication Engineering, National Taiwan University (2020-2022)
+&lt;ul&gt;
+&lt;li&gt;Master’s Thesis: Game-Theoretic Resource Management for Decomposable DNN Inference in Edge-IoT Framework (Advisor: Prof. Hung-Yu Wei)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Exchange student in Computer Technology and Information System, Bilkent University (2019/09-2020/01)&lt;/li&gt;
 &lt;li&gt;B.S. degree of Department of Electrical Engineering, National Tsing Hua University (2016/09-2020/06)&lt;/li&gt;
 &lt;/ul&gt;
@@ -39,8 +44,11 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;publication&#34;&gt;Publication&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Ya-Ting Yang and Hung-Yu Wei, &amp;ldquo;&lt;strong&gt;Edge Computing and Networking Resource Management for Decomposable Deep Learning: An Auction-Based Approach&lt;/strong&gt;,&amp;rdquo; The 22nd Asia-Pacific Network Operations and Management Symposium (APNOMS), Sept. 2021&lt;/li&gt;
-&lt;li&gt;First-author work submitted to IEEE Internet of Things Journal&lt;/li&gt;
+&lt;li&gt;Ya-Ting Yang and Hung-Yu Wei, “Edge Computing and Networking Resource Management for Decomposable Deep Learning: An Auction-Based Approach,” APNOMS, Sept. 2021&lt;/li&gt;
+&lt;li&gt;Ya-Ting Yang and Hung-Yu Wei, “Edge-IoT Computing and Networking Resource Allocation for Decomposable Deep Learning Inference,” IEEE Internet of Things Journal, accepted and to appear, 2022&lt;/li&gt;
+&lt;li&gt;Ya-Ting Yang and Hung-Yu Wei, “A Coalition Formation Approach for Privacy and Energy-Aware Split Deep Learning Inference in Edge Camera Network,” IEEE Transactions on Network and Service Management, accepted and to appear, 2022&lt;/li&gt;
+&lt;li&gt;Kai-Jung Fu, Ya-Ting Yang, and Hung-Yu Wei, “Split Computing Video Analytics Performance Enhancement with Auction-based Resource Management,” IEEE Access, Volume 10, Page 106495 - 106505, Oct. 2022&lt;/li&gt;
+&lt;li&gt;Ya-Ting Yang, Tao Li, and Quanyan Zhu, “Designing Policies for Truth: Combating Misinformation with Transparency and Information Design.”&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;award&#34;&gt;Award&lt;/h2&gt;
 &lt;ul&gt;
@@ -64,6 +72,12 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;extracurricular-activities-and-leadership&#34;&gt;Extracurricular Activities and Leadership&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;Community Services
+&lt;ul&gt;
+&lt;li&gt;As a reviewer for IEEE Transactions on Industrial Informatics (2022)&lt;/li&gt;
+&lt;li&gt;As a reviewer for IEEE Internet of Things Journal (2023)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Volunteer
 &lt;ul&gt;
 &lt;li&gt;Bal Ashram, Rajasthan, India (2019 summer)&lt;/li&gt;
