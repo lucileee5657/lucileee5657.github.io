@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Lucile Yang</title>
-    <link>https://example.com/project/</link>
+    <link>https://lucileee5657.github.io/project/</link>
     <description>Recent content in Projects on Lucile Yang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lucileee5657.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Edge–IoT Resource Allocation for Decomposable Deep Learning</title>
-      <link>https://example.com/project/edge-iot-split-vcg/</link>
+      <link>https://lucileee5657.github.io/project/edge-iot-split-vcg/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/edge-iot-split-vcg/</guid>
-      <description>&lt;p&gt;Link to Paper (This work is published in IEEE Internet of Things Journal): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9953097&#34;&gt;https://ieeexplore.ieee.org/abstract/document/9953097&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://example.com/images/edge-iot-split-vcg/system.png&#34; alt=&#34;Edge–IoT Applications System Model&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Deep learning (DL) applications have attracted significant attention with the rapidly growing demand for Internet of Things (IoT) systems. However, performing the inference tasks for DL applications on IoT devices is challenging due to the large computational demands of DL models. Recently, edge computing has offered us a solution by deploying resources near the end users. However, resources at the edge are still limited; thus, management issues, such as allocating the networking resources as well as the computing capabilities and configuring the devices appropriately for different applications, become essential.&lt;/p&gt;</description>
+      <guid>https://lucileee5657.github.io/project/edge-iot-split-vcg/</guid>
+      <description>&lt;p&gt;Link to Paper (This work is published in IEEE Internet of Things Journal): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9953097&#34;&gt;https://ieeexplore.ieee.org/abstract/document/9953097&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://lucileee5657.github.io/images/edge-iot-split-vcg/system.png&#34; alt=&#34;Edge–IoT Applications System Model&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Deep learning (DL) applications have attracted significant attention with the rapidly growing demand for Internet of Things (IoT) systems. However, performing the inference tasks for DL applications on IoT devices is challenging due to the large computational demands of DL models. Recently, edge computing has offered us a solution by deploying resources near the end users. However, resources at the edge are still limited; thus, management issues, such as allocating the networking resources as well as the computing capabilities and configuring the devices appropriately for different applications, become essential.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
