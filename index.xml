@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HOME on Lucile Yang</title>
+    <link>https://example.com/</link>
+    <description>Recent content in HOME on Lucile Yang</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Edge–IoT Resource Allocation for Decomposable Deep Learning</title>
+      <link>https://example.com/project/edge-iot-split-vcg/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/edge-iot-split-vcg/</guid>
+      <description>&lt;p&gt;Link to Paper (This work is published in IEEE Internet of Things Journal): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9953097&#34;&gt;https://ieeexplore.ieee.org/abstract/document/9953097&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://example.com/images/edge-iot-split-vcg/system.png&#34; alt=&#34;Edge–IoT Applications System Model&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Deep learning (DL) applications have attracted significant attention with the rapidly growing demand for Internet of Things (IoT) systems. However, performing the inference tasks for DL applications on IoT devices is challenging due to the large computational demands of DL models. Recently, edge computing has offered us a solution by deploying resources near the end users. However, resources at the edge are still limited; thus, management issues, such as allocating the networking resources as well as the computing capabilities and configuring the devices appropriately for different applications, become essential.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting started</title>
+      <link>https://example.com/post/getting-started/</link>
+      <pubDate>Fri, 03 May 2019 09:37:55 +0200</pubDate>
+      <guid>https://example.com/post/getting-started/</guid>
+      <description>&lt;p&gt;Here are some details to help you getting started with this theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio Definition</title>
+      <link>https://example.com/post/portfolio-definition/</link>
+      <pubDate>Thu, 02 May 2019 19:49:05 +0200</pubDate>
+      <guid>https://example.com/post/portfolio-definition/</guid>
+      <description>&lt;p&gt;Here are some details about the portfolio settings.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://example.com/post/images/portfolio-example.png&#34;&#xA;    alt=&#34;Example of Portfolio page&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Example of Portfolio page&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Archetypes management</title>
+      <link>https://example.com/post/archetypes/</link>
+      <pubDate>Thu, 02 May 2019 19:25:30 +0200</pubDate>
+      <guid>https://example.com/post/archetypes/</guid>
+      <description>&lt;p&gt;The archetypes are defined in the &lt;code&gt;archetypes&lt;/code&gt; folder, for both post and portfolio.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shortcodes</title>
+      <link>https://example.com/post/shortcodes/</link>
+      <pubDate>Mon, 29 Apr 2019 19:12:12 +0100</pubDate>
+      <guid>https://example.com/post/shortcodes/</guid>
+      <description>&lt;p&gt;Introduction of the shortcodes defined in the personal-web theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Config File</title>
+      <link>https://example.com/post/config-file/</link>
+      <pubDate>Sat, 20 Apr 2019 19:12:12 +0100</pubDate>
+      <guid>https://example.com/post/config-file/</guid>
+      <description>&lt;p&gt;Here is the basic config file used for personal-web.&lt;/p&gt;&#xA;&lt;p&gt;You can use it as a base for your website.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pages</title>
+      <link>https://example.com/post/pages/</link>
+      <pubDate>Sat, 20 Apr 2019 19:12:12 +0100</pubDate>
+      <guid>https://example.com/post/pages/</guid>
+      <description>&lt;p&gt;Variables you can use in pages&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Open Graph image</title>
+      <link>https://example.com/post/define-specific-og-image/</link>
+      <pubDate>Sat, 20 Apr 2019 11:14:59 +0200</pubDate>
+      <guid>https://example.com/post/define-specific-og-image/</guid>
+      <description>&lt;p&gt;Within any page, you can add in the FrontMatter a images array that will be used to define a specific Open Graph image.&lt;/p&gt;&#xA;&lt;p&gt;For example, see &lt;code&gt;content/_index.md&lt;/code&gt; page:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-YAML&#34; data-lang=&#34;YAML&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;images&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/images/sample.jpg&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
