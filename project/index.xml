@@ -6,8 +6,15 @@
     <description>Recent content in Projects on Lucile Yang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 May 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lucileee5657.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combating Misinformation on Online Social Platform</title>
+      <link>https://lucileee5657.github.io/project/misinformation/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://lucileee5657.github.io/project/misinformation/</guid>
+      <description>&lt;p&gt;Paper (This work is published in 2023 21st International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (WiOpt)): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/10349848&#34;&gt;https://ieeexplore.ieee.org/abstract/document/10349848&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Misinformation has become a growing issue on online social platforms (OSPs), especially during elections or pandemics. To combat this, OSPs have implemented various policies, such as tagging, to notify users about potentially misleading information. However, these policies are often transparent and therefore susceptible to being exploited by content creators, who may not be willing to invest effort into producing authentic content, causing the viral spread of misinformation.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Privacy and Energy-Aware Split Deep Learning in Edge Camera Network</title>
       <link>https://lucileee5657.github.io/project/edge-camera-coalition/</link>
