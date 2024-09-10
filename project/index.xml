@@ -6,10 +6,17 @@
     <description>Recent content in Projects on Lucile Yang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 May 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lucileee5657.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Edge–IoT Resource Allocation for Decomposable Deep Learning</title>
+      <title>Privacy and Energy-Aware Split Deep Learning in Edge Camera Network</title>
+      <link>https://lucileee5657.github.io/project/edge-camera-coalition/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://lucileee5657.github.io/project/edge-camera-coalition/</guid>
+      <description>&lt;p&gt;Paper (This work is published in IEEE Transactions on Network and Service Management): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9941479&#34;&gt;https://ieeexplore.ieee.org/abstract/document/9941479&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://lucileee5657.github.io/images/edge-camera-coalition/edge-camera.png&#34; alt=&#34;Edge Camera Network&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Recently, an increasing amount of application tasks have depended on deep learning (DL) inference models on Internet of Things (IoT) based camera networks. However, it is challenging to perform the inference of such resource-hungry DL models on the computationally limited IoT system. Compared to cloud computing, edge computing deploys resources near the end-users to reduce the transmission delay and retains the raw data on the trusted servers to mitigate privacy concerns. Since resources at the edge are limited, management like user association decisions, edge resources allocation, and device configuration with DL model parameter selection becomes essential.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resource Allocation for Decomposable DNN in Edge–IoT Framework</title>
       <link>https://lucileee5657.github.io/project/edge-iot-split-vcg/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://lucileee5657.github.io/project/edge-iot-split-vcg/</guid>
