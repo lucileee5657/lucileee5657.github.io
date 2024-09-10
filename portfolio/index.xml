@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PORTFOLIO on Lucile Yang</title>
-    <link>http://localhost:1313/portfolio/</link>
-    <description>Recent content in PORTFOLIO on Lucile Yang</description>
+    <title>Projects on Lucile Yang</title>
+    <link>https://lucileee5657.github.io/portfolio/</link>
+    <description>Recent content in Projects on Lucile Yang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2019 19:47:09 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lucileee5657.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sample project</title>
-      <link>http://localhost:1313/portfolio/sample-project/</link>
-      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
-      <guid>http://localhost:1313/portfolio/sample-project/</guid>
-      <description>&lt;p&gt;This would be a description of your sample project. You can add any content you&amp;rsquo;d like.&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&#xA;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&#xA;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&#xA;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&#xA;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&#xA;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
+      <title>Herd Accountability from Auditing Privacy-Preserving Algorithms</title>
+      <link>https://lucileee5657.github.io/portfolio/herd-audit/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://lucileee5657.github.io/portfolio/herd-audit/</guid>
+      <description>&lt;p&gt;Paper (This prior work is published in Decision and Game Theory for Security&#xA;(GameSec 2023)): &lt;a href=&#34;https://link.springer.com/chapter/10.1007/978-3-031-50670-3_18&#34;&gt;https://link.springer.com/chapter/10.1007/978-3-031-50670-3_18&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!---&#xA;![The herd audit concept.](/images/herd-audit/concept.png)&#xA;---&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Privacy-preserving AI algorithms are widely adopted in various domains, but the lack of transparency might pose accountability issues. While auditing algorithms can address this issue, machine-based audit approaches are often costly and time-consuming.&lt;/p&gt;&#xA;&lt;p&gt;Herd audit, on the other hand, offers an alternative solution by harnessing collective intelligence. Nevertheless, the presence of epistemic disparity among auditors, resulting in varying levels of expertise and access to knowledge, may impact audit performance. An effective herd audit will establish a credible accountability threat for algorithm developers, incentivizing them to uphold their claims.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Combating Misinformation on Online Social Platform</title>
+      <link>https://lucileee5657.github.io/portfolio/misinformation/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://lucileee5657.github.io/portfolio/misinformation/</guid>
+      <description>&lt;p&gt;Link to Paper (This work is published in 2023 21st International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (WiOpt)): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/10349848&#34;&gt;https://ieeexplore.ieee.org/abstract/document/10349848&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Misinformation has become a growing issue on online social platforms (OSPs), especially during elections or pandemics. To combat this, OSPs have implemented various policies, such as tagging, to notify users about potentially misleading information. However, these policies are often transparent and therefore susceptible to being exploited by content creators, who may not be willing to invest effort into producing authentic content, causing the viral spread of misinformation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy and Energy-Aware Split Deep Learning in Edge Camera Network</title>
+      <link>https://lucileee5657.github.io/portfolio/edge-camera-coalition/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://lucileee5657.github.io/portfolio/edge-camera-coalition/</guid>
+      <description>&lt;p&gt;Paper (This work is published in IEEE Transactions on Network and Service Management): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9941479&#34;&gt;https://ieeexplore.ieee.org/abstract/document/9941479&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!---&#xA;![Edge Camera Network](/images/edge-camera-coalition/edge-camera.png)&#xA;---&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Recently, an increasing amount of application tasks have depended on deep learning (DL) inference models on Internet of Things (IoT) based camera networks. However, it is challenging to perform the inference of such resource-hungry DL models on the computationally limited IoT system. Compared to cloud computing, edge computing deploys resources near the end-users to reduce the transmission delay and retains the raw data on the trusted servers to mitigate privacy concerns. Since resources at the edge are limited, management like user association decisions, edge resources allocation, and device configuration with DL model parameter selection becomes essential.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resource Allocation for Decomposable DNN in Edge–IoT Framework</title>
+      <link>https://lucileee5657.github.io/portfolio/edge-iot-split-vcg/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://lucileee5657.github.io/portfolio/edge-iot-split-vcg/</guid>
+      <description>&lt;p&gt;Link to Paper (This work is published in IEEE Internet of Things Journal): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9953097&#34;&gt;https://ieeexplore.ieee.org/abstract/document/9953097&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!---&#xA;![Edge–IoT Applications System Model](/images/edge-iot-split-vcg/system.png)&#xA;---&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Deep learning (DL) applications have attracted significant attention with the rapidly growing demand for Internet of Things (IoT) systems. However, performing the inference tasks for DL applications on IoT devices is challenging due to the large computational demands of DL models. Recently, edge computing has offered us a solution by deploying resources near the end users. However, resources at the edge are still limited; thus, management issues, such as allocating the networking resources as well as the computing capabilities and configuring the devices appropriately for different applications, become essential.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

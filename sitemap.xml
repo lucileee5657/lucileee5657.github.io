@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lucileee5657.github.io/project/misinformation/</loc>
-    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
+    <loc>https://lucileee5657.github.io/portfolio/herd-audit/</loc>
+    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://lucileee5657.github.io/</loc>
+    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://lucileee5657.github.io/portfolio/</loc>
+    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://lucileee5657.github.io/portfolio/misinformation/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://lucileee5657.github.io/project/</loc>
-    <lastmod>2023-04-24T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://lucileee5657.github.io/project/edge-camera-coalition/</loc>
+    <loc>https://lucileee5657.github.io/portfolio/edge-camera-coalition/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://lucileee5657.github.io/project/edge-iot-split-vcg/</loc>
+    <loc>https://lucileee5657.github.io/portfolio/edge-iot-split-vcg/</loc>
     <lastmod>2021-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
