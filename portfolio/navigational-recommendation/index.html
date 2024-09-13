@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <title>Adaptive Navigational Recommendations for Urban Transportation - Lucile Yang</title>
+  <link rel='canonical' href='https://lucileee5657.github.io/portfolio/navigational-recommendation/' />
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <meta name='description' content='Navigational Recommendations, intelligent transportation system, ITS, projected gradient descent, driver behavior, incentive compatibility' />
+  <meta name='theme-color' content='#FD3519' />
+  
+
+  <meta name="generator" content="Hugo 0.134.1">
+
+  
+
+
+
+
+
+<link rel="stylesheet" href="https://lucileee5657.github.io/sass/style.min.eabe1aa4bd266a15f7b39b122bd6a5cc75cb067e5373631ac21d7815d6240d6f.css" integrity="sha256-6r4apL0mahX3s5sSK9alzHXLBn5Tc2Mawh14FdYkDW8=" media="screen">
+<link rel="stylesheet" href="https://lucileee5657.github.io/syntax.min.css" integrity="" media="screen">
+
+  <meta property="og:url" content="https://lucileee5657.github.io/portfolio/navigational-recommendation/">
+  <meta property="og:site_name" content="Lucile Yang">
+  <meta property="og:title" content="Adaptive Navigational Recommendations for Urban Transportation">
+  <meta property="og:description" content="Navigational Recommendations, intelligent transportation system, ITS, projected gradient descent, driver behavior, incentive compatibility">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="portfolio">
+    <meta property="article:published_time" content="2024-07-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-18T00:00:00+00:00">
+
+  
+  <meta itemprop="name" content="Adaptive Navigational Recommendations for Urban Transportation">
+  <meta itemprop="description" content="Navigational Recommendations, intelligent transportation system, ITS, projected gradient descent, driver behavior, incentive compatibility">
+  <meta itemprop="datePublished" content="2024-07-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-18T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2417">
+</head>
+<body>
+
+  <header style="background-image:linear-gradient(
+      rgba(0,0,0,0.4),rgba(0,0,0,0.4)
+    ),url(&#39;https://lucileee5657.github.io/images/ny.jpg&#39;)">
+  <div class="intro">
+    <div class="logo-container">
+      <a href="/">
+        <img src='https://lucileee5657.github.io/images/me.JPG' alt="Profile HOME" class="rounded-logo">
+      </a>
+    </div>
+    <h2>Hi, I'm Lucile 👋</h2>
+    <h3>I'm a PhD candidate in ECE at NYU</h3>
+    <div class="menu">
+      
+
+        <p>
+            <a href="/about/">
+                About
+            </a>
+        </p>
+
+        <p>
+            <a href="/portfolio/">
+                Project
+            </a>
+        </p>
+
+        <p>
+            <a href="/post/">
+                Post
+            </a>
+        </p>
+
+      
+        
+        <p>
+            <a href="mailto:yy4348@nyu.edu" target="_blank" rel="external">
+                My Email
+            </a>
+        </p>
+      
+    </div>
+  </div>
+
+  <div class="socials">
+      
+  
+    <a href="https://github.com/lucileee5657/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.instagram.com/lucile5657/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M57.526 28.111c-16.254 0-29.364 13.11-29.364 29.363 0 16.254 13.11 29.364 29.364 29.364 16.253 0 29.363-13.11 29.363-29.364 0-16.253-13.11-29.363-29.363-29.363zm0 48.453c-10.504 0-19.09-8.56-19.09-19.09 0-10.528 8.56-19.09 19.09-19.09 10.528 0 19.09 8.562 19.09 19.09 0 10.53-8.587 19.09-19.09 19.09zM94.939 26.91a6.833 6.833 0 0 1-6.849 6.849 6.833 6.833 0 0 1-6.849-6.849 6.85 6.85 0 0 1 13.698 0zm19.448 6.951c-.435-9.174-2.53-17.301-9.251-23.997C98.44 3.17 90.313 1.074 81.139.614c-9.456-.537-37.797-.537-47.252 0-9.15.434-17.276 2.53-23.997 9.225S1.099 24.66.639 33.836c-.537 9.455-.537 37.796 0 47.252.434 9.174 2.53 17.3 9.251 23.996 6.721 6.696 14.822 8.792 23.997 9.252 9.455.536 37.796.536 47.252 0 9.174-.435 17.301-2.53 23.997-9.252 6.695-6.695 8.79-14.822 9.25-23.996.537-9.456.537-37.771 0-47.227zM102.17 91.233c-1.993 5.01-5.852 8.868-10.887 10.887-7.538 2.99-25.427 2.3-33.758 2.3-8.332 0-26.246.664-33.76-2.3-5.008-1.993-8.867-5.852-10.886-10.887-2.99-7.539-2.3-25.427-2.3-33.759 0-8.33-.664-26.245 2.3-33.758 1.993-5.01 5.852-8.868 10.887-10.887 7.539-2.99 25.427-2.3 33.759-2.3 8.33 0 26.245-.665 33.758 2.3 5.01 1.993 8.868 5.852 10.887 10.887 2.99 7.538 2.3 25.427 2.3 33.758 0 8.332.69 26.246-2.3 33.76z" />
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/lucile-ya-ting-yang-943422182/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="mailto:yy4348@nyu.edu" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M0 0v115h115V0H0zm95.542 27.235l-6.16 5.905a1.81 1.81 0 0 0-.693 1.72v43.458c-.103.667.154 1.335.693 1.72l6.032 5.904v1.31h-30.29v-1.259l6.238-6.058c.616-.616.616-.795.616-1.72V43.074L54.625 87.123h-2.336l-20.202-44.05v29.52c-.18 1.233.257 2.49 1.13 3.39l8.111 9.83v1.31H18.277v-1.31l8.111-9.83a3.93 3.93 0 0 0 1.053-3.39v-34.14a2.93 2.93 0 0 0-.976-2.516l-7.213-8.702v-1.309h22.41l17.301 37.991 15.222-37.965h21.357v1.283z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  </div>
+</header>
+
+<div class="mobile-header">
+  <p> Lucile Yang </p>
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+
+<div class="overlay-menu">
+  <header>
+    <div class="intro">
+      <div class="logo-container">
+        <a href="/">
+          <img src='https://lucileee5657.github.io/images/me.JPG' alt="Profile HOME" class="rounded-logo">
+        </a>
+      </div>
+      <h2>Hi, I'm Lucile 👋</h2>
+      <h3>I'm a PhD candidate in ECE at NYU</h3>
+      <div class="menu">
+        
+
+        <p>
+            <a href="/about/">
+                About
+            </a>
+        </p>
+
+        <p>
+            <a href="/portfolio/">
+                Project
+            </a>
+        </p>
+
+        <p>
+            <a href="/post/">
+                Post
+            </a>
+        </p>
+
+        
+          
+          <p>
+              <a href="mailto:yy4348@nyu.edu" target="_blank" rel="external">
+                  My Email
+              </a>
+          </p>
+        
+      </div>
+    </div>
+
+    <div class="socials">
+        
+  
+    <a href="https://github.com/lucileee5657/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.instagram.com/lucile5657/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M57.526 28.111c-16.254 0-29.364 13.11-29.364 29.363 0 16.254 13.11 29.364 29.364 29.364 16.253 0 29.363-13.11 29.363-29.364 0-16.253-13.11-29.363-29.363-29.363zm0 48.453c-10.504 0-19.09-8.56-19.09-19.09 0-10.528 8.56-19.09 19.09-19.09 10.528 0 19.09 8.562 19.09 19.09 0 10.53-8.587 19.09-19.09 19.09zM94.939 26.91a6.833 6.833 0 0 1-6.849 6.849 6.833 6.833 0 0 1-6.849-6.849 6.85 6.85 0 0 1 13.698 0zm19.448 6.951c-.435-9.174-2.53-17.301-9.251-23.997C98.44 3.17 90.313 1.074 81.139.614c-9.456-.537-37.797-.537-47.252 0-9.15.434-17.276 2.53-23.997 9.225S1.099 24.66.639 33.836c-.537 9.455-.537 37.796 0 47.252.434 9.174 2.53 17.3 9.251 23.996 6.721 6.696 14.822 8.792 23.997 9.252 9.455.536 37.796.536 47.252 0 9.174-.435 17.301-2.53 23.997-9.252 6.695-6.695 8.79-14.822 9.25-23.996.537-9.456.537-37.771 0-47.227zM102.17 91.233c-1.993 5.01-5.852 8.868-10.887 10.887-7.538 2.99-25.427 2.3-33.758 2.3-8.332 0-26.246.664-33.76-2.3-5.008-1.993-8.867-5.852-10.886-10.887-2.99-7.539-2.3-25.427-2.3-33.759 0-8.33-.664-26.245 2.3-33.758 1.993-5.01 5.852-8.868 10.887-10.887 7.539-2.99 25.427-2.3 33.759-2.3 8.33 0 26.245-.665 33.758 2.3 5.01 1.993 8.868 5.852 10.887 10.887 2.99 7.538 2.3 25.427 2.3 33.758 0 8.332.69 26.246-2.3 33.76z" />
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/lucile-ya-ting-yang-943422182/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="mailto:yy4348@nyu.edu" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M0 0v115h115V0H0zm95.542 27.235l-6.16 5.905a1.81 1.81 0 0 0-.693 1.72v43.458c-.103.667.154 1.335.693 1.72l6.032 5.904v1.31h-30.29v-1.259l6.238-6.058c.616-.616.616-.795.616-1.72V43.074L54.625 87.123h-2.336l-20.202-44.05v29.52c-.18 1.233.257 2.49 1.13 3.39l8.111 9.83v1.31H18.277v-1.31l8.111-9.83a3.93 3.93 0 0 0 1.053-3.39v-34.14a2.93 2.93 0 0 0-.976-2.516l-7.213-8.702v-1.309h22.41l17.301 37.991 15.222-37.965h21.357v1.283z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+    </div>
+  </header>
+</div>
+
+  <div class="content-wrapper">
+    
+      <div class="breadcrumb">
+  
+
+
+
+
+
+<span >
+  <a href="https://lucileee5657.github.io/">HOME</a>
+   / 
+</span>
+
+
+<span >
+  <a href="https://lucileee5657.github.io/portfolio/">Projects</a>
+   / 
+</span>
+
+
+<span  class="active">
+  <a href="https://lucileee5657.github.io/portfolio/navigational-recommendation/">Adaptive Navigational Recommendations for Urban Transportation</a>
+  
+</span>
+
+</div>
+
+    
+    <main id="content" class="portfolio">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+
+<h1>Adaptive Navigational Recommendations for Urban Transportation</h1>
+<div class="tags">
+  
+
+
+
+
+  <div class="portfolio-tags">
+    <div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M70.577 44.423c11.476 11.476 12.214 29.713 2.19 42.038-1.402 1.736-.625.868-19.078 19.321-12.285 12.285-32.18 12.296-44.47 0-12.29-12.284-12.294-32.176 0-44.47 7.36-7.362 11.642-11.657 14.242-14.253 1.676-1.674 4.566-.53 4.601 1.84.042 2.862.4 5.712 1.066 8.496a2.68 2.68 0 0 1-.72 2.515L18.112 70.206c-7.357 7.362-7.387 19.292 0 26.684 7.361 7.357 19.292 7.386 26.683 0L61.683 80c7.348-7.351 7.362-19.32 0-26.682a18.805 18.805 0 0 0-5.125-3.645c-1.038-.502-1.613-1.629-1.473-2.773a11.616 11.616 0 0 1 3.327-6.83l.983-.982a2.68 2.68 0 0 1 3.09-.516 31.268 31.268 0 0 1 8.092 5.851zm35.205-35.205c-12.292-12.296-32.186-12.285-44.47 0-18.454 18.453-17.677 17.585-19.08 19.32-10.023 12.326-9.285 30.563 2.19 42.039a31.268 31.268 0 0 0 8.092 5.85 2.68 2.68 0 0 0 3.091-.515l.983-.982a11.614 11.614 0 0 0 3.327-6.83c.14-1.144-.435-2.271-1.473-2.773a18.801 18.801 0 0 1-5.125-3.645c-7.362-7.362-7.348-19.33 0-26.681l16.889-16.89c7.391-7.387 19.322-7.358 26.683 0 7.387 7.39 7.357 19.321 0 26.683L86.591 55.09a2.68 2.68 0 0 0-.719 2.515 38.927 38.927 0 0 1 1.066 8.497c.035 2.368 2.925 3.513 4.602 1.84 2.6-2.596 6.88-6.892 14.242-14.253 12.293-12.294 12.288-32.187 0-44.471z"/>
+  
+  </svg>
+</div>
+
+    <a target="_blank" href="https://arxiv.org/abs/2409.00236">https://arxiv.org/abs/2409.00236</a>
+  </div>
+
+
+<div class="portfolio-tags">
+  <div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M77.577 51.23a1.807 1.807 0 0 0-2.2.342l-27.562 27.79a1.807 1.807 0 0 1-2.2.342l-14.008-9.702a1.807 1.807 0 0 0-2.2.342l-1.952 1.968c-.287.22-.456.568-.455.936.001.37.172.716.46.934L45.637 86.77a1.807 1.807 0 0 0 2.2-.342l31.709-31.97c.287-.22.456-.567.455-.936a1.175 1.175 0 0 0-.46-.933l-1.963-1.36z"/><path d="M97.304 20H80.512c-.041.34-.063.683-.064 1.026a5.986 5.986 0 0 0 1.256 4.1c.054.003.103.02.157.025a4.881 4.881 0 0 1 1.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932 0 0 1-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745 0-.347.023-.685.04-1.026H34.579c-.041.34-.063.683-.064 1.026a5.986 5.986 0 0 0 1.256 4.1c.054.003.103.02.157.025a4.881 4.881 0 0 1 1.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932 0 0 1-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745 0-.22.019-.434.025-.652a9.788 9.788 0 0 0-5.697 4.471 9.683 9.683 0 0 0-2.65 4.764L1.158 92.871c-.965 4.689 2.6 8.503 7.948 8.503h6.334v2.673c-.077 5.41 4.263 9.861 9.705 9.953h72.16c5.438-.095 9.774-4.546 9.694-9.953V29.953c.08-5.407-4.256-9.858-9.695-9.953zM10.078 96.653c-2.378 0-3.964-1.697-3.535-3.782L16.637 43.84h80.787L87.331 92.871a5.254 5.254 0 0 1-5.091 3.782H10.078zm91.535 7.394c.036 2.403-1.891 4.382-4.308 4.424h-72.16c-2.42-.04-4.352-2.018-4.32-4.424v-2.673h60.443c5.348 0 10.484-3.814 11.449-8.503l8.897-43.215v54.391z"/><path d="M34.814 33c1.243 0 2.251-1.057 2.251-2.36 0-1.305-1.008-2.362-2.25-2.362-2.04 0-4.313-3.194-4.313-7.778s2.272-7.778 4.312-7.778c1.227 0 2.536 1.163 3.386 3.084H43C41.716 11.19 38.578 8 34.814 8 29.871 8 26 13.49 26 20.5c0 7.009 3.871 12.5 8.814 12.5z"/>
+  
+  </svg>
+</div>
+
+  <span>2024</span>
+</div>
+</div>
+
+<img title="Adaptive Navigational Recommendations for Urban Transportation" alt="Adaptive Navigational Recommendations for Urban Transportation" src="/portfolio/navigational-recommendation/update.png" />
+
+<h2 id="motivation">Motivation</h2>
+<p>In urban transportation environments, drivers often encounter various path (route) options when navigating to their destinations. This emphasizes the importance of navigational recommendation systems (NRS), which simplify decision-making and reduce travel time for users while alleviating potential congestion for broader societal benefits. However, recommending the shortest path may cause the flash crowd effect, and system-optimal routes may not always align the preferences of human users, leading to non-compliance issues. It is also worth noting that universal NRS adoption is impractical.</p>
+<p>Therefore, in this study, we aim to address these challenges by proposing an incentive compatibility recommendation system from a game-theoretic perspective and accounts for non-user drivers with their own path choice behaviors.</p>
+<h2 id="our-approach">Our approach</h2>
+<p>Interacting directly with human users and being aware of potential non-compliance concerns, NRS must ensure that users lack incentives to unilaterally deviate from the recommendations, which coincides with the concept of Nash equilibrium. Consequently, we suggest that a feasible recommendation provided by the NRS must satisfy the incentive constraints for the users. Furthermore, assuming universal adoption of a specific NRS among all individuals within the urban transportation network is rather impractical. Thus, we also account for non-user drivers who navigate independently based on their own preferences and path choice behaviors.</p>
+<p><img src="/images/navigational-recommendation/NRS.png" alt="NRS"></p>
+<p>Additionally, recognizing the dynamic nature of traffic conditions and the unpredictability of accidents, we also introduce a dynamic NRS with parallel and random update schemes using projected gradient descent (PGD), aiming to assisting users in safely adapting to changing traffic conditions while ensuring optimal total travel time costs. The following figure shows the update scheme that utilizes vehicle-to-everything (V2X) technologies and the edge computing framework, where the edge server (embedded in the road infrastructure) can collect localized data, exchange regional traffic conditions with other edge servers, and communicate with the local apps associated with NRS users. Then, the local NRS app can compute and provide the updated recommendation for its user.</p>
+<p><img src="/images/navigational-recommendation/update.png" alt="update scheme"></p>
+<h3 id="a-bit-more-on-the-system-model">A bit more on the system model</h3>
+<p>One of the essential components of NRS is the urban transportation network, represented by $\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$. In this context, the set of nodes $\mathcal{V}$ corresponds to intersections, while the set of edges $\mathcal{E}$ indicates the roads. Traveling along a road $e\in \mathcal{E}$ will incur a cost $c_e: \mathbb{R}_{\ge 0} \mapsto \mathbb{R}_{+}$ associated with the expected flow $f_e \in \mathbb{R}_{\ge 0}$ on that road $e$. One usual choice for the cost function $c_e(\cdot)$ is the travel time cost </p>
+$$c_e(f_e)=t_e\left(1+\eta\left(\frac{f_e}{k_e}\right)^\zeta\right)$$<p> provided by the standard Bureau of Public Roads (BPR) function. Here, $t_e \in \mathbb{R}_{+}$ represents the free-flow travel time on road $e$, $k_e \in \mathbb{R}_{+}$ signifies the capacity of road $e$, and $\eta, \zeta \in \mathbb{R}_{\ge 0}$ are some parameters.</p>
+<p>The user set of NRS is denoted as $\mathcal{U}$. Each user, $u \in \mathcal{U}$, is associated with a specific origin $O_u \in \mathcal{V}$ and destination $D_u \in \mathcal{V}$ pair. We refer to the pair as an OD pair, expressed by $\theta_u = (O_u, D_u)$, and the set of OD pairs for the NRS users is $\Theta_{\mathcal{U}} \subset \Theta$, with $\Theta =  |\mathcal{V}| \times |\mathcal{V}|$. Then, user $u$ with OD pair $\theta_u$ has the feasible path choice set $\mathcal{S}_u = \{s_{u, 1}, \cdots, s_{u, k_u}\}$. Each choice $s_{u, i} \in \mathcal{S}_u$ provides the user $u$ a path from the origin to the desired destination.
+%To this end, the factors taken into account by the NRS can be represented as $\mathscr{G}=\left\langle \  \mathcal{G}, (c_e(\cdot))_{e \in \mathcal{E}}, \mathcal{U}, (\mathcal{S}_u)_{u \in \mathcal{U}} \ \right\rangle$.</p>
+<p>This study explores the scenario where the NRS recommends a mixed strategy over feasible path choices to the users.
+Define $\mathcal{P}_u:=\Delta \mathcal{S}_u$ as the simplex of $\mathcal{S}_u$ and  $\mathcal{P}:=\Pi_{u \in \mathcal{U}}\mathcal{P}_u$. A mixed strategy for user $u$ is $\textbf{P}_u \in \mathcal{P}_u$ so that $\textbf{P}_u=\{p_{u, i}\}_{i=1, \cdots, k_u}$ is a probability distribution over $\mathcal{S}_u$. Each $p_{u, i}\in[0,1]$ denotes the probability that the NRS recommends path $s_{u, i} \in \mathcal{S}_u$ to user $u$, subject to the constraints
+$
+    \sum_{i=1}^{k_u}p_{u, i}=1 , \ \forall u \in \mathcal{U}.
+$ That is, </p>
+$$\mathcal{P}_u := \left\{\textbf{P}_{u} \in \mathbb{R}^{k_u} \middle| p_{u,i}\geq 0, i=1, \cdots, k_u , \sum^{k_u}_{i=1}p_{u,i}=1 \right\},$$<p> which is compact and convex. Then, the recommendations suggested by the NRS to all users is $\textbf{P}=\{\textbf{P}_u\}_{u \in \mathcal{U}} \in \mathcal{P}$.</p>
+<p>In transportation, from a microscopic perspective, the probability $p_{u, i}$ can be interpreted as the expected volume generated by user $u$ along path $s_{u, i}$. This, in turn, contributes to the expected flow (load) $f_e^r: \mathcal{P} \mapsto \mathbb{R}_{\ge 0}$ on edge $e \in \mathcal{E}$ as below.
+</p>
+$$
+    f_e^r(\textbf{P})=\sum_{u \in \mathcal{U}}\sum_{s_{u, i} \in \mathcal{S}_u}p_{u, i}\mathbf{1}_{\{e \in s_{u, i}\}},
+$$<p> with the indicator function $\mathbf{1}_{\{e \in s_{u, i}\}}$ equal to $1$ if road $e$ is part of path $s_{u, i}$ and $0$ otherwise. Therefore, a generalized travel cost $C_{u, i}: \mathcal{P} \mapsto \mathbb{R}_{+}$ for user $u$ associated with path $s_{u, i}$ can be formulated by summing the costs of all the edges along the path:
+</p>
+$$
+    C_{u, i}(\textbf{P})=\sum_{e \in s_{u, i}}c_e(f_e^r).
+$$<p>We denote the set of drivers who do not use the NRS as $\Bar{\mathcal{U}}$. Similar to the users, each driver $\Bar{u} \in \Bar{\mathcal{U}}$ is associated with an origin $O_{\Bar{u}} \in \mathcal{V}$ and destination $D_{\Bar{u}} \in \mathcal{V}$ pair, leading to a set of feasible paths $\mathcal{S}_{\Bar{u}} = \{s_{\Bar{u}, 1}, \cdots, s_{\Bar{u}, k_{\Bar{u}}}\}$. Without loss of generality, this work assumes that the stochastic choice behavior of these drivers can be modeled by the Multinomial Logit (MNL) model.</p>
+<p>In the context of path choices, the model supposes that individuals make choices based on the value they associate with each available option. That is, the behavior (mixed strategy) of driver $\Bar{u}$ over the set of feasible path choices $\mathcal{S}_{\Bar{u}}$ is given by
+</p>
+$$
+p_{\Bar{u}, i}^o=\frac{e^{V_{\Bar{u}, i}}}{\sum_{i=1}^{k_{\Bar{u}}}e^{V_{\Bar{u}, i}}}, \ \forall s_{\Bar{u}, i} \in \mathcal{S}_{\Bar{u}},
+$$<p> where $V_{\Bar{u}, i}=-\alpha_{\Bar{u}}-\beta_{\Bar{u}} C_{{\Bar{u}}, i}^o$ represents the driver&rsquo;s value of path $s_{\Bar{u}, i}$, with $C_{\Bar{u}, i}^o \in \mathbb R_{+}$ being the current (initial) cost (travel time) on $s_{\Bar{u}, i}$. Here, $\alpha_{\Bar{u}} \in \mathbb{R}$ and $\beta_{\Bar{u}} \in \mathbb{R}$ are driver $\Bar{u}$&rsquo;s preference parameters.
+We denote $\textbf{P}_{o}=\{p_{\Bar{u}, i}^o\}_{\Bar{u} \in \Bar{\mathcal{U}}, i=1, \cdots, k_{\Bar{u}}}$ as the mixed strategy played by the drivers. Then, the expected flow induced by other drivers on the road $e \in \mathcal{E}$ is $f_e^o: \Pi_{\Bar{u}\in \Bar{\mathcal{U}}} \Delta \mathcal{S}_{\Bar{u}} \mapsto \mathbb{R}_{\ge 0}$, where
+</p>
+$$
+    f_e^o(\textbf{P}_o)=\sum_{\Bar{u} \in \Bar{\mathcal{U}}}\sum_{i=1}^{k_{\Bar{u}}}p^o_{\Bar{u}, i}\mathbf{1}_{\{e \in s_{\Bar{u}, i}\}}.
+$$<p>In situations where the NRS takes into account other drivers, the combined expected flow caused by both users and drivers on each road $e \in \mathcal{E}$ is $f_e: \mathcal{P} \times \Pi_{\Bar{u}\in \Bar{\mathcal{U}}} \Delta \mathcal{S}_{\Bar{u}} \mapsto \mathbb{R}_{\ge 0}$, where $f_e(\textbf{P};\textbf{P}_{o}) = f_e^r(\textbf{P}) +f_e^o(\textbf{P}_{o})$, leading to the travel time cost </p>
+$$c_e(f_e(\textbf{P};\textbf{P}_{o}))=t_e\left(1+\eta\left(\frac{f_e^r(\textbf{P})+f_e^o(\textbf{P}_{o})}{k_e}\right)^\zeta\right).$$<p> Thus, the travel cost for user $u$ associated with path $s_{u, i}$ becomes $\Tilde{C}_{u, i}: \mathcal{P} \times \Pi_{\Bar{u}\in \Bar{\mathcal{U}}} \Delta \mathcal{S}_{\Bar{u}} \mapsto \mathbb{R}_{+}$, and can be expressed as<br>
+</p>
+$$
+    \Tilde{C}_{u, i}(\textbf{P};\textbf{P}_{o})=\sum_{e \in s_{u, i}}c_e(f_e^r(\textbf{P})+f_e^o(\textbf{P}_{o})),
+$$<p> where the additional expected flow $f_e^o(\textbf{P}_{o})$ resulting from other drivers&rsquo; path choice behaviors $\textbf{P}^o$ does not change with the recommended mixed strategies $\textbf{P}$.</p>
+<p>To this end, the elements considered in the context of urban transportation network and taken into account by the NRS can be encapsulated using the notation $\mathscr{R}=\left\langle \  \mathcal{G}, (c_e(\cdot))_{e \in \mathcal{E}}, \mathcal{U}, (\mathcal{S}_u)_{u \in \mathcal{U}}, \mathcal{\Bar{U}}, (\mathcal{S}_{\Bar{u}})_{\Bar{u} \in \mathcal{\Bar{U}}} \ \right\rangle$, and we call $\mathscr{R}$ the ``NRS component&rsquo;'.</p>
+<p>Considering an NRS component denoted as $\mathscr{R}$, a feasible recommendation profile to all the users $\textbf{P} \in \mathcal{P}$ needs to satisfy:
+</p>
+$$
+\sum^{k_u}_{i=1}p_{u,i}\Tilde{C}_{u,i}(\textbf{P}_{u},\textbf{P}_{-u}; \textbf{P}_o)-p^{\prime}_{u,i}\Tilde{C}_{u,i}(\textbf{P}^{\prime}_{u},\textbf{P}_{-u}; \textbf{P}_o) \leq 0, 
+ \forall \textbf{P}^{\prime}_{u} \in \mathcal{P}_u, \forall u \in \mathcal{U},
+$$$$
+\sum^{k_u}_{i=1}p_{u,i}=1, \forall u \in \mathcal{U},
+$$$$
+p_{u,i}\geq 0, \ \forall s_{u, i} \in \mathcal{S}_u, \forall u \in \mathcal{U}.
+$$<h3 id="a-bit-more-on-the-updated-scheme">A bit more on the updated scheme</h3>
+<p>With recent advances in vehicle-to-everything (V2X) technology and edge computing, each user (or the local app associated with each user) is capable of getting the current traffic conditions through edge servers embedded in the road infrastructure. Denote traffic conditions at time step $n$ as $\textbf{m}^{(n)} \in \mathbb{R}_{\ge 0}^{|\mathcal{E}|}$, with $\textbf{m}^{(n)}= (m_e^{(n)})_{e \in \mathcal{E}}$. Recall that each element, represented by $m_e^{(n)}$, comes from the resulting expected flow and define $M_e: \mathcal{P} \times \Pi_{\Bar{u}\in \Bar{\mathcal{U}}} \Delta \mathcal{S}_{\Bar{u}} \mapsto \mathbb{R}_{\ge 0}$ so that
+</p>
+$$m_e^{(n)}=M_e(\textbf{P}^{(n)};\textbf{P}_o^{(n)})=\frac{f_e^u(\textbf{P}_u^{(n)})+\hat{f}_e(\textbf{P}_{-u}^{(n)};\textbf{P}_o^{(n)})}{k_e}.$$<p>After gathering the current traffic conditions $\textbf{m}^{(n)}$, user $u$ can utilize his/her navigational recommendation $\textbf{P}_u^{(n)}$ at time step $n$ to infer the conditions influenced by other users and drivers, denoted as $(\hat{f}_e(\textbf{P}_{-u}^{(n)};\textbf{P}_o^{(n)}))_{e \in \mathcal{E}}$. It is worth noting that the PGD method described in Section \ref{sec:PGD} for solving $\textbf{OP}_u$ requires user $u$ to have access to both the recommendations for other users $\textbf{P}_{-u}$, and the drivers&rsquo; behaviors $\textbf{P}_{o}$. However, once the values of $\textbf{m}^{(n)}$ become available to users, local apps (or users) can directly utilize $\textbf{m}^{(n)}$ to update the recommendations. We will discuss two update schemes in the following subsections.</p>
+<h4 id="parallel-update-algorithm">Parallel Update Algorithm</h4>
+<p>In this section, we explore a parallel update scheme where every user (or local app) synchronously adjusts their recommendation at each time step. The updated scheme is illustrated in Fig. \ref{fig:update_workflow}. By leveraging the traffic condition $\textbf{m}^{(n)}$, we can rewrite the cost function evaluated by user $u$ as $\Tilde{F}_u: \mathcal{P}_u \times \mathbb{R}_{\ge 0}^{|\mathcal{E}|} \mapsto \mathbb{R}_{+}$, where at time step $n$,
+</p>
+$$\Tilde{F}_u(\textbf{P}_u^{(n)},\textbf{m}^{(n)})=\sum_{i=1}^{k_u} p_{u, i}^{(n)} \sum_{e \in \mathcal{E}}a_{es_{u,i}}t_e\left[1+\eta m_e^{\zeta (n)}\right].$$<p>
+Note that $\Tilde{F}_u(\textbf{P}_u^{(n)},\textbf{m}^{(n)})$ and $F_u(\textbf{P}_{u}^{(n)}, \textbf{P}_{-u}^{(n)}; \textbf{P}_o^{(n)})$ have identical value at the same $\textbf{P}_{u}^{(n)}, \textbf{P}_{-u}^{(n)}, \textbf{P}_o^{(n)}$.
+Then, the gradient of $\Tilde{F}_u$ with respect to each element $p_{u, i}^{(n)}$ of $\textbf{P}_u^{(n)}$ becomes $\partial \Tilde{F}_u/\partial p_{u, i}^{(n)}=$
+</p>
+$$
+    \sum_{e \in \mathcal{E}} a_{es_{u, i}} t_e\left[1+\eta\Big(m_e^{\zeta (n)} + \zeta  \frac{f_e^u(\textbf{P}_u^{(n)})}{k_e} m_e^{\zeta-1 (n)}\Big)\right].
+$$<p>
+Let $\nabla_u \Tilde{F}_u =(\partial \Tilde{F}_u/\partial p_{u, i}^{(n)})_{s_{u, i} \in \mathcal{S}_u}$ and denote gradient of $\Tilde{F}_u$ at $\textbf{P}_u^{(n)}, \textbf{m}^{(n)}$ as $\nabla_u \Tilde{F}_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)})$, starting with some initial point for all users, $\textbf{P}^{(0)} \in \mathcal{P}$, the updated recommendation at time step $n+1$ is, therefore, $\forall u \in \mathcal{U}$,
+</p>
+$$
+    \textbf{P}_u^{(n+1)} = \text{proj}_{\mathcal{P}_u}\left[\textbf{P}_u^{(n)}-\alpha_n \nabla_u \Tilde{F}_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)})\right].
+$$<p>
+By denoting $\nabla \Tilde{F}(\textbf{P}^{(n)},\textbf{m}^{(n)})=(\nabla_u \Tilde{F}_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)}))_{u \in \mathcal{U}}$ and concatenating \eqref{eq:update_P_u} together, we can get:
+</p>
+$$
+    \textbf{P}^{(n+1)} = \text{proj}_{\mathcal{P}}\left[\textbf{P}^{(n)}-\alpha_n \nabla \Tilde{F}(\textbf{P}^{(n)}, \textbf{m}^{(n)})\right].
+$$<p>Under the conditions that for all $u \in \mathcal{U}$, the expected cost $F_u$ is continuously differentiable in $\textbf{P} \in \mathcal{P}$ and convex in $\textbf{P}_u \in \mathcal{P}_u$, the sequence of recommendations $\{\textbf{P}^{(n)}\}$, generated by the equation above, converges to an NE, $\textbf{P}^{*}$.
+Therefore, the $u$-th component of $\textbf{P}^{(n+1)}$ can be performed locally by the NRS app linked to user $u$. Such distributed gradient updates still lead to the convergence to an NE under mild assumptions.</p>
+<h2 id="main-results">Main Results</h2>
+<br>
+<ul>
+<li>Our numerical analyses demonstrate that the updated scheme achieves the lowest total user travel time costs while ensuring user engagement and adherence to recommendations.</li>
+</ul>
+<h2 id="some-related-research-on-nrs">Some related research (on NRS)</h2>
+<h3 id="selfish-individualized-recommendations">Selfish (individualized) recommendations</h3>
+<p>One aspect of recommendation systems often focuses on individually optimizing recommendations for each user by suggesting the shortest paths according to current traffic conditions.</p>
+<p>However, such individualized (selfish) recommendations tend to overlook the collective impact on other users, potentially leading to the flash crowd effect. That is, if a substantial number of users simultaneously navigate to the same shortest path, it can result in a surge of traffic volume along that path, increasing the overall congestion levels across the urban transportation network.</p>
+<h4 id="papers">Papers</h4>
+<br>
+<ul>
+<li>D. E. Knuth, “A generalization of dijkstra’s algorithm,” Information Processing Letters, vol. 6, no. 1, pp. 1–5, 1977.</li>
+<li>H. D. Sherali, K. Ozbay, and S. Subramanian, “The time-dependent shortest pair of disjoint paths problem: Complexity, models, and algorithms,” Networks: An International Journal, vol. 31, no. 4, pp. 259–272, 1998.</li>
+<li>A. Grzybek, G. Danoy, P. Bouvry, and M. Seredynski, “Mitigating flash crowd effect using connected vehicle technology,” Vehicular Communications, vol. 2, no. 4, pp. 238–250, 2015.</li>
+</ul>
+<h3 id="system-optimal-recommendations">System optimal recommendations</h3>
+<p>Alternatively, recommendation systems may prioritize overall system efficiency by minimizing the total travel time cost over the network. However, this approach can result in disparities where some users experience longer travel times compared to others traveling from the same origin to the same destination. This discrepancy raises concerns regarding user compliance and fairness. The challenge then lies in promoting socially responsible behavior among users, motivating them to accept recommendations that may entail higher travel costs in exchange for alleviating congestion for the collective benefit.</p>
+<h3 id="user-equilibrium-recommendations">User equilibrium recommendations</h3>
+<p>On the contrary, recommendation systems can adopt the concept of user equilibrium, as seen in mixed-strategy or pure-strategy atomic routing games. In such equilibrium scenarios, fairness among users is guaranteed, as individuals with the same origin and destination experience identical (minimum) travel times once equilibrium is reached. Following such a case, the user will not have incentives to deviate from the recommendation; thus, user compliance can be ensured. Several recent studies in equilibrium routing also share similar insights while incorporating machine learning techniques to improve traffic prediction or users’ route choice behaviors.</p>
+<h4 id="papers-1">Papers</h4>
+<br>
+<ul>
+<li>L. Du, L. Han, and X.-Y. Li, “Distributed coordinated in-vehicle online routing using mixed-strategy congestion game,” Transportation Research Part B: Methodological, vol. 67, pp. 1–17, 2014.</li>
+<li>L. Du, S. Chen, and L. Han, “Coordinated online in-vehicle navigation guidance based on routing game theory,” Transportation Research Record, vol. 2497, no. 1, pp. 106–116, 2015.</li>
+<li>N. Mahajan, A. Hegyi, S. P. Hoogendoorn, and B. van Arem, “Design analysis of a decentralized equilibrium-routing strategy for intelligent vehicles,” Transportation Research Part C: Emerging Technologies, vol. 103, pp. 308–327, 2019.</li>
+<li>B. Zhou, Q. Song, Z. Zhao, and T. Liu, “A reinforcement learning scheme for the equilibrium of the in-vehicle route choice problem based on congestion game,” Applied Mathematics and Computation, vol. 371, p. 124895, 2020.</li>
+</ul>
+<h3 id="between-system-efficiency-and-user-equilibrium">Between system efficiency and user equilibrium</h3>
+<p>Therefore, many research efforts aim to bridge the gap between system efficiency and user equilibrium. They strive to minimize overall system costs associated with individually optimizing or user equilibrium recommendations to a certain desired level.</p>
+<p>Within this domain, two main research trends have emerged: one focuses on minimizing overall system costs while accounting for user preferences or selfish choice behavior constraints, and the other strategically designs or perturbs the information received by users to align user preferences with system efficiency.</p>
+<h4 id="papers-2">Papers</h4>
+<br>
+<ul>
+<li>M. van Essen, T. Thomas, E. van Berkum, and C. Chorus, “From user equilibrium to system optimum: a literature review on the role of travel information, bounded rationality and non-selfish behaviour at the network and individual levels,” Transport Reviews, vol. 36, no. 4, pp. 527–548, 2016.</li>
+<li>V. Morandi, “Bridging the user equilibrium and the system optimum in static traffic assignment: a review,” 4OR, pp. 1–31, 2023.</li>
+<li>Y. Ning and L. Du, “Robust and resilient equilibrium routing mechanism for traffic congestion mitigation built upon correlated equilibrium and distributed optimization,” Transportation research part B: methodological, vol. 168, pp. 170–205, 2023.</li>
+<li>S. Spana, L. Du, and Y. Yin, “Strategic information perturbation for an online in-vehicle coordinated routing mechanism for connected vehicles under mixed-strategy congestion game,” IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 5, pp. 4541–4555, 2021.</li>
+</ul>
+
+
+
+
+    </main>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      <p>Made with ❤️ &mdash; Powered by <a href="https://gohugo.io/" target="_blank" rel="external">Hugo</a> and the <a href="https://github.com/bjacquemet/personal-web" target='_blank' rel="external">Personal Web</a> theme.</p>
+      <p></p>
+    </div>
+  </footer>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Raleway:400,400i,600" rel="stylesheet">
+  
+  <script type="text/javascript">
+    document.querySelector('.mobile-header').addEventListener('click', function () {
+      var om = document.querySelector(".overlay-menu");
+      if (document.querySelector('.hamburger').classList.contains("cross")) {
+        document.querySelector('.hamburger').classList.remove("cross");
+        om.style.display = "none";
+        om.style.width = "0%";
+        om.style.height = "0%";
+      }
+      else {
+        document.querySelector('.hamburger').classList.add("cross");
+        om.style.width = "100%";
+        om.style.height = "100vh";
+        om.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

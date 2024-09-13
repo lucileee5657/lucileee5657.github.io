@@ -6,8 +6,15 @@
     <description>Recent content in Projects on Lucile Yang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lucileee5657.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adaptive Navigational Recommendations for Urban Transportation</title>
+      <link>https://lucileee5657.github.io/portfolio/navigational-recommendation/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://lucileee5657.github.io/portfolio/navigational-recommendation/</guid>
+      <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;In urban transportation environments, drivers often encounter various path (route) options when navigating to their destinations. This emphasizes the importance of navigational recommendation systems (NRS), which simplify decision-making and reduce travel time for users while alleviating potential congestion for broader societal benefits. However, recommending the shortest path may cause the flash crowd effect, and system-optimal routes may not always align the preferences of human users, leading to non-compliance issues. It is also worth noting that universal NRS adoption is impractical.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Herd Accountability from Auditing Privacy-Preserving Algorithms</title>
       <link>https://lucileee5657.github.io/portfolio/herd-audit/</link>
