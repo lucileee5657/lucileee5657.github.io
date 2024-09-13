@@ -34,7 +34,7 @@
   <meta itemprop="description" content="Navigational Recommendations, intelligent transportation system, ITS, projected gradient descent, driver behavior, incentive compatibility">
   <meta itemprop="datePublished" content="2024-07-18T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-07-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="2413">
+  <meta itemprop="wordCount" content="2401">
 </head>
 <body>
 
@@ -44,7 +44,7 @@
   <div class="intro">
     <div class="logo-container">
       <a href="/">
-        <img src='https://lucileee5657.github.io/images/me.JPG' alt="Profile HOME" class="rounded-logo">
+        <img src='https://lucileee5657.github.io/images/me.JPG' alt="Profile 404 Page not found" class="rounded-logo">
       </a>
     </div>
     <h2>Hi, I'm Lucile 👋</h2>
@@ -144,7 +144,7 @@
     <div class="intro">
       <div class="logo-container">
         <a href="/">
-          <img src='https://lucileee5657.github.io/images/me.JPG' alt="Profile HOME" class="rounded-logo">
+          <img src='https://lucileee5657.github.io/images/me.JPG' alt="Profile 404 Page not found" class="rounded-logo">
         </a>
       </div>
       <h2>Hi, I'm Lucile 👋</h2>
@@ -362,9 +362,9 @@ p_{u,i}\geq 0, \ \forall s_{u, i} \in \mathcal{S}_u, \forall u \in \mathcal{U}.
 $$<h3 id="a-bit-more-on-the-updated-scheme">A bit more on the updated scheme</h3>
 <p>With recent advances in vehicle-to-everything (V2X) technology and edge computing, each user (or the local app associated with each user) is capable of getting the current traffic conditions through edge servers embedded in the road infrastructure. Denote traffic conditions at time step $n$ as $\textbf{m}^{(n)} \in \mathbb{R}_{\ge 0}^{|\mathcal{E}|}$, with $\textbf{m}^{(n)}= (m_e^{(n)})_{e \in \mathcal{E}}$. Recall that each element, represented by $m_e^{(n)}$, comes from the resulting expected flow and define $M_e: \mathcal{P} \times \Pi_{d\in \mathcal{U}_d} \Delta \mathcal{S}_{d} \mapsto \mathbb{R}_{\ge 0}$ so that
 </p>
-$$m_e^{(n)}=M_e(\textbf{P}^{(n)};\textbf{P}_o^{(n)})=\frac{f_e^u(\textbf{P}_u^{(n)})+\hat{f}_e(\textbf{P}_{-u}^{(n)};\textbf{P}_o^{(n)})}{k_e}.$$<p>After gathering the current traffic conditions $\textbf{m}^{(n)}$, user $u$ can utilize his/her navigational recommendation $\textbf{P}_u^{(n)}$ at time step $n$ to infer the conditions influenced by other users and drivers, denoted as $(\hat{f}_e(\textbf{P}_{-u}^{(n)};\textbf{P}_o^{(n)}))_{e \in \mathcal{E}}$. It is worth noting that the PGD method described in Section \ref{sec:PGD} for solving $\textbf{OP}_u$ requires user $u$ to have access to both the recommendations for other users $\textbf{P}_{-u}$, and the drivers&rsquo; behaviors $\textbf{P}_{o}$. However, once the values of $\textbf{m}^{(n)}$ become available to users, local apps (or users) can directly utilize $\textbf{m}^{(n)}$ to update the recommendations. We will discuss two update schemes in the following subsections.</p>
+$$m_e^{(n)}=M_e(\textbf{P}^{(n)};\textbf{P}_o^{(n)})=\frac{f_e^u(\textbf{P}_u^{(n)})+\hat{f}_e(\textbf{P}_{-u}^{(n)};\textbf{P}_o^{(n)})}{k_e}.$$<p>After gathering the current traffic conditions $\textbf{m}^{(n)}$, user $u$ can utilize his/her navigational recommendation $\textbf{P}_u^{(n)}$ at time step $n$ to infer the conditions influenced by other users and drivers, denoted as $(\hat{f}_e(\textbf{P}_{-u}^{(n)};\textbf{P}_o^{(n)}))_{e \in \mathcal{E}}$. It is worth noting that the PGD method for solving $\textbf{OP}_u$ requires user $u$ to have access to both the recommendations for other users $\textbf{P}_{-u}$, and the drivers&rsquo; behaviors $\textbf{P}_{o}$. However, once the values of $\textbf{m}^{(n)}$ become available to users, local apps (or users) can directly utilize $\textbf{m}^{(n)}$ to update the recommendations. We will discuss two update schemes in the following subsections.</p>
 <h4 id="parallel-update-algorithm">Parallel Update Algorithm</h4>
-<p>In this section, we explore a parallel update scheme where every user (or local app) synchronously adjusts their recommendation at each time step. The updated scheme is illustrated in Fig. \ref{fig:update_workflow}. By leveraging the traffic condition $\textbf{m}^{(n)}$, we can rewrite the cost function evaluated by user $u$ as $F'_u: \mathcal{P}_u \times \mathbb{R}_{\ge 0}^{|\mathcal{E}|} \mapsto \mathbb{R}_{+}$, where at time step $n$,
+<p>In this section, we explore a parallel update scheme where every user (or local app) synchronously adjusts their recommendation at each time step. By leveraging the traffic condition $\textbf{m}^{(n)}$, we can rewrite the cost function evaluated by user $u$ as $F'_u: \mathcal{P}_u \times \mathbb{R}_{\ge 0}^{|\mathcal{E}|} \mapsto \mathbb{R}_{+}$, where at time step $n$,
 </p>
 $$F'_u(\textbf{P}_u^{(n)},\textbf{m}^{(n)})=\sum_{i=1}^{k_u} p_{u, i}^{(n)} \sum_{e \in \mathcal{E}}a_{es_{u,i}}t_e\left[1+\eta m_e^{\zeta (n)}\right].$$<p>
 Note that $F'_u(\textbf{P}_u^{(n)},\textbf{m}^{(n)})$ and $F_u(\textbf{P}_{u}^{(n)}, \textbf{P}_{-u}^{(n)}; \textbf{P}_o^{(n)})$ have identical value at the same $\textbf{P}_{u}^{(n)}, \textbf{P}_{-u}^{(n)}, \textbf{P}_o^{(n)}$.
