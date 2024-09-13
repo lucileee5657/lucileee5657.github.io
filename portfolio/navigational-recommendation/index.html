@@ -34,7 +34,7 @@
   <meta itemprop="description" content="Navigational Recommendations, intelligent transportation system, ITS, projected gradient descent, driver behavior, incentive compatibility">
   <meta itemprop="datePublished" content="2024-07-18T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-07-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="2417">
+  <meta itemprop="wordCount" content="2413">
 </head>
 <body>
 
@@ -333,55 +333,55 @@ $$<p> with the indicator function $\mathbf{1}_{\{e \in s_{u, i}\}}$ equal to $1$
 </p>
 $$
     C_{u, i}(\textbf{P})=\sum_{e \in s_{u, i}}c_e(f_e^r).
-$$<p>We denote the set of drivers who do not use the NRS as $\Bar{\mathcal{U}}$. Similar to the users, each driver $\Bar{u} \in \Bar{\mathcal{U}}$ is associated with an origin $O_{\Bar{u}} \in \mathcal{V}$ and destination $D_{\Bar{u}} \in \mathcal{V}$ pair, leading to a set of feasible paths $\mathcal{S}_{\Bar{u}} = \{s_{\Bar{u}, 1}, \cdots, s_{\Bar{u}, k_{\Bar{u}}}\}$. Without loss of generality, this work assumes that the stochastic choice behavior of these drivers can be modeled by the Multinomial Logit (MNL) model.</p>
-<p>In the context of path choices, the model supposes that individuals make choices based on the value they associate with each available option. That is, the behavior (mixed strategy) of driver $\Bar{u}$ over the set of feasible path choices $\mathcal{S}_{\Bar{u}}$ is given by
+$$<p>We denote the set of drivers who do not use the NRS as $\mathcal{U}_d$. Similar to the users, each driver $d \in \mathcal{U}_d$ is associated with an origin $O_{d} \in \mathcal{V}$ and destination $D_{d} \in \mathcal{V}$ pair, leading to a set of feasible paths $\mathcal{S}_{d} = \{s_{d, 1}, \cdots, s_{d, k_{d}}\}$. Without loss of generality, this work assumes that the stochastic choice behavior of these drivers can be modeled by the Multinomial Logit (MNL) model.</p>
+<p>In the context of path choices, the model supposes that individuals make choices based on the value they associate with each available option. That is, the behavior (mixed strategy) of driver $d$ over the set of feasible path choices $\mathcal{S}_{d}$ is given by
 </p>
 $$
-p_{\Bar{u}, i}^o=\frac{e^{V_{\Bar{u}, i}}}{\sum_{i=1}^{k_{\Bar{u}}}e^{V_{\Bar{u}, i}}}, \ \forall s_{\Bar{u}, i} \in \mathcal{S}_{\Bar{u}},
-$$<p> where $V_{\Bar{u}, i}=-\alpha_{\Bar{u}}-\beta_{\Bar{u}} C_{{\Bar{u}}, i}^o$ represents the driver&rsquo;s value of path $s_{\Bar{u}, i}$, with $C_{\Bar{u}, i}^o \in \mathbb R_{+}$ being the current (initial) cost (travel time) on $s_{\Bar{u}, i}$. Here, $\alpha_{\Bar{u}} \in \mathbb{R}$ and $\beta_{\Bar{u}} \in \mathbb{R}$ are driver $\Bar{u}$&rsquo;s preference parameters.
-We denote $\textbf{P}_{o}=\{p_{\Bar{u}, i}^o\}_{\Bar{u} \in \Bar{\mathcal{U}}, i=1, \cdots, k_{\Bar{u}}}$ as the mixed strategy played by the drivers. Then, the expected flow induced by other drivers on the road $e \in \mathcal{E}$ is $f_e^o: \Pi_{\Bar{u}\in \Bar{\mathcal{U}}} \Delta \mathcal{S}_{\Bar{u}} \mapsto \mathbb{R}_{\ge 0}$, where
+p_{d, i}^o=\frac{e^{V_{d, i}}}{\sum_{i=1}^{k_{d}}e^{V_{d, i}}}, \ \forall s_{d, i} \in \mathcal{S}_{d},
+$$<p> where $V_{d, i}=-\alpha_{d}-\beta_{d} C_{{d}, i}^o$ represents the driver&rsquo;s value of path $s_{d, i}$, with $C_{d, i}^o \in \mathbb R_{+}$ being the current (initial) cost (travel time) on $s_{d, i}$. Here, $\alpha_{d} \in \mathbb{R}$ and $\beta_{d} \in \mathbb{R}$ are driver $d$&rsquo;s preference parameters.
+We denote $\textbf{P}_{o}=\{p_{d, i}^o\}_{d \in \mathcal{U}_d, i=1, \cdots, k_{d}}$ as the mixed strategy played by the drivers. Then, the expected flow induced by other drivers on the road $e \in \mathcal{E}$ is $f_e^o: \Pi_{d\in \mathcal{U}_d} \Delta \mathcal{S}_{d} \mapsto \mathbb{R}_{\ge 0}$, where
 </p>
 $$
-    f_e^o(\textbf{P}_o)=\sum_{\Bar{u} \in \Bar{\mathcal{U}}}\sum_{i=1}^{k_{\Bar{u}}}p^o_{\Bar{u}, i}\mathbf{1}_{\{e \in s_{\Bar{u}, i}\}}.
-$$<p>In situations where the NRS takes into account other drivers, the combined expected flow caused by both users and drivers on each road $e \in \mathcal{E}$ is $f_e: \mathcal{P} \times \Pi_{\Bar{u}\in \Bar{\mathcal{U}}} \Delta \mathcal{S}_{\Bar{u}} \mapsto \mathbb{R}_{\ge 0}$, where $f_e(\textbf{P};\textbf{P}_{o}) = f_e^r(\textbf{P}) +f_e^o(\textbf{P}_{o})$, leading to the travel time cost </p>
-$$c_e(f_e(\textbf{P};\textbf{P}_{o}))=t_e\left(1+\eta\left(\frac{f_e^r(\textbf{P})+f_e^o(\textbf{P}_{o})}{k_e}\right)^\zeta\right).$$<p> Thus, the travel cost for user $u$ associated with path $s_{u, i}$ becomes $\Tilde{C}_{u, i}: \mathcal{P} \times \Pi_{\Bar{u}\in \Bar{\mathcal{U}}} \Delta \mathcal{S}_{\Bar{u}} \mapsto \mathbb{R}_{+}$, and can be expressed as<br>
+    f_e^o(\textbf{P}_o)=\sum_{d \in \mathcal{U}_d}\sum_{i=1}^{k_{d}}p^o_{d, i}\mathbf{1}_{\{e \in s_{d, i}\}}.
+$$<p>In situations where the NRS takes into account other drivers, the combined expected flow caused by both users and drivers on each road $e \in \mathcal{E}$ is $f_e: \mathcal{P} \times \Pi_{d\in \mathcal{U}_d} \Delta \mathcal{S}_{d} \mapsto \mathbb{R}_{\ge 0}$, where $f_e(\textbf{P};\textbf{P}_{o}) = f_e^r(\textbf{P}) +f_e^o(\textbf{P}_{o})$, leading to the travel time cost </p>
+$$c_e(f_e(\textbf{P};\textbf{P}_{o}))=t_e\left(1+\eta\left(\frac{f_e^r(\textbf{P})+f_e^o(\textbf{P}_{o})}{k_e}\right)^\zeta\right).$$<p> Thus, the travel cost for user $u$ associated with path $s_{u, i}$ becomes $C'_{u, i}: \mathcal{P} \times \Pi_{d\in \mathcal{U}_d} \Delta \mathcal{S}_{d} \mapsto \mathbb{R}_{+}$, and can be expressed as<br>
 </p>
 $$
-    \Tilde{C}_{u, i}(\textbf{P};\textbf{P}_{o})=\sum_{e \in s_{u, i}}c_e(f_e^r(\textbf{P})+f_e^o(\textbf{P}_{o})),
+    C'_{u, i}(\textbf{P};\textbf{P}_{o})=\sum_{e \in s_{u, i}}c_e(f_e^r(\textbf{P})+f_e^o(\textbf{P}_{o})),
 $$<p> where the additional expected flow $f_e^o(\textbf{P}_{o})$ resulting from other drivers&rsquo; path choice behaviors $\textbf{P}^o$ does not change with the recommended mixed strategies $\textbf{P}$.</p>
-<p>To this end, the elements considered in the context of urban transportation network and taken into account by the NRS can be encapsulated using the notation $\mathscr{R}=\left\langle \  \mathcal{G}, (c_e(\cdot))_{e \in \mathcal{E}}, \mathcal{U}, (\mathcal{S}_u)_{u \in \mathcal{U}}, \mathcal{\Bar{U}}, (\mathcal{S}_{\Bar{u}})_{\Bar{u} \in \mathcal{\Bar{U}}} \ \right\rangle$, and we call $\mathscr{R}$ the ``NRS component&rsquo;'.</p>
+<p>To this end, the elements considered in the context of urban transportation network and taken into account by the NRS can be encapsulated using the notation $\mathscr{R}=\left\langle \  \mathcal{G}, (c_e(\cdot))_{e \in \mathcal{E}}, \mathcal{U}, (\mathcal{S}_u)_{u \in \mathcal{U}}, \mathcal{d}, (\mathcal{S}_{d})_{d \in \mathcal{d}} \ \right\rangle$, and we call $\mathscr{R}$ the ``NRS component&rsquo;'.</p>
 <p>Considering an NRS component denoted as $\mathscr{R}$, a feasible recommendation profile to all the users $\textbf{P} \in \mathcal{P}$ needs to satisfy:
 </p>
 $$
-\sum^{k_u}_{i=1}p_{u,i}\Tilde{C}_{u,i}(\textbf{P}_{u},\textbf{P}_{-u}; \textbf{P}_o)-p^{\prime}_{u,i}\Tilde{C}_{u,i}(\textbf{P}^{\prime}_{u},\textbf{P}_{-u}; \textbf{P}_o) \leq 0, 
+\sum^{k_u}_{i=1}p_{u,i}C'_{u,i}(\textbf{P}_{u},\textbf{P}_{-u}; \textbf{P}_o)-p^{\prime}_{u,i}C'_{u,i}(\textbf{P}^{\prime}_{u},\textbf{P}_{-u}; \textbf{P}_o) \leq 0, 
  \forall \textbf{P}^{\prime}_{u} \in \mathcal{P}_u, \forall u \in \mathcal{U},
 $$$$
 \sum^{k_u}_{i=1}p_{u,i}=1, \forall u \in \mathcal{U},
 $$$$
 p_{u,i}\geq 0, \ \forall s_{u, i} \in \mathcal{S}_u, \forall u \in \mathcal{U}.
 $$<h3 id="a-bit-more-on-the-updated-scheme">A bit more on the updated scheme</h3>
-<p>With recent advances in vehicle-to-everything (V2X) technology and edge computing, each user (or the local app associated with each user) is capable of getting the current traffic conditions through edge servers embedded in the road infrastructure. Denote traffic conditions at time step $n$ as $\textbf{m}^{(n)} \in \mathbb{R}_{\ge 0}^{|\mathcal{E}|}$, with $\textbf{m}^{(n)}= (m_e^{(n)})_{e \in \mathcal{E}}$. Recall that each element, represented by $m_e^{(n)}$, comes from the resulting expected flow and define $M_e: \mathcal{P} \times \Pi_{\Bar{u}\in \Bar{\mathcal{U}}} \Delta \mathcal{S}_{\Bar{u}} \mapsto \mathbb{R}_{\ge 0}$ so that
+<p>With recent advances in vehicle-to-everything (V2X) technology and edge computing, each user (or the local app associated with each user) is capable of getting the current traffic conditions through edge servers embedded in the road infrastructure. Denote traffic conditions at time step $n$ as $\textbf{m}^{(n)} \in \mathbb{R}_{\ge 0}^{|\mathcal{E}|}$, with $\textbf{m}^{(n)}= (m_e^{(n)})_{e \in \mathcal{E}}$. Recall that each element, represented by $m_e^{(n)}$, comes from the resulting expected flow and define $M_e: \mathcal{P} \times \Pi_{d\in \mathcal{U}_d} \Delta \mathcal{S}_{d} \mapsto \mathbb{R}_{\ge 0}$ so that
 </p>
 $$m_e^{(n)}=M_e(\textbf{P}^{(n)};\textbf{P}_o^{(n)})=\frac{f_e^u(\textbf{P}_u^{(n)})+\hat{f}_e(\textbf{P}_{-u}^{(n)};\textbf{P}_o^{(n)})}{k_e}.$$<p>After gathering the current traffic conditions $\textbf{m}^{(n)}$, user $u$ can utilize his/her navigational recommendation $\textbf{P}_u^{(n)}$ at time step $n$ to infer the conditions influenced by other users and drivers, denoted as $(\hat{f}_e(\textbf{P}_{-u}^{(n)};\textbf{P}_o^{(n)}))_{e \in \mathcal{E}}$. It is worth noting that the PGD method described in Section \ref{sec:PGD} for solving $\textbf{OP}_u$ requires user $u$ to have access to both the recommendations for other users $\textbf{P}_{-u}$, and the drivers&rsquo; behaviors $\textbf{P}_{o}$. However, once the values of $\textbf{m}^{(n)}$ become available to users, local apps (or users) can directly utilize $\textbf{m}^{(n)}$ to update the recommendations. We will discuss two update schemes in the following subsections.</p>
 <h4 id="parallel-update-algorithm">Parallel Update Algorithm</h4>
-<p>In this section, we explore a parallel update scheme where every user (or local app) synchronously adjusts their recommendation at each time step. The updated scheme is illustrated in Fig. \ref{fig:update_workflow}. By leveraging the traffic condition $\textbf{m}^{(n)}$, we can rewrite the cost function evaluated by user $u$ as $\Tilde{F}_u: \mathcal{P}_u \times \mathbb{R}_{\ge 0}^{|\mathcal{E}|} \mapsto \mathbb{R}_{+}$, where at time step $n$,
+<p>In this section, we explore a parallel update scheme where every user (or local app) synchronously adjusts their recommendation at each time step. The updated scheme is illustrated in Fig. \ref{fig:update_workflow}. By leveraging the traffic condition $\textbf{m}^{(n)}$, we can rewrite the cost function evaluated by user $u$ as $F'_u: \mathcal{P}_u \times \mathbb{R}_{\ge 0}^{|\mathcal{E}|} \mapsto \mathbb{R}_{+}$, where at time step $n$,
 </p>
-$$\Tilde{F}_u(\textbf{P}_u^{(n)},\textbf{m}^{(n)})=\sum_{i=1}^{k_u} p_{u, i}^{(n)} \sum_{e \in \mathcal{E}}a_{es_{u,i}}t_e\left[1+\eta m_e^{\zeta (n)}\right].$$<p>
-Note that $\Tilde{F}_u(\textbf{P}_u^{(n)},\textbf{m}^{(n)})$ and $F_u(\textbf{P}_{u}^{(n)}, \textbf{P}_{-u}^{(n)}; \textbf{P}_o^{(n)})$ have identical value at the same $\textbf{P}_{u}^{(n)}, \textbf{P}_{-u}^{(n)}, \textbf{P}_o^{(n)}$.
-Then, the gradient of $\Tilde{F}_u$ with respect to each element $p_{u, i}^{(n)}$ of $\textbf{P}_u^{(n)}$ becomes $\partial \Tilde{F}_u/\partial p_{u, i}^{(n)}=$
+$$F'_u(\textbf{P}_u^{(n)},\textbf{m}^{(n)})=\sum_{i=1}^{k_u} p_{u, i}^{(n)} \sum_{e \in \mathcal{E}}a_{es_{u,i}}t_e\left[1+\eta m_e^{\zeta (n)}\right].$$<p>
+Note that $F'_u(\textbf{P}_u^{(n)},\textbf{m}^{(n)})$ and $F_u(\textbf{P}_{u}^{(n)}, \textbf{P}_{-u}^{(n)}; \textbf{P}_o^{(n)})$ have identical value at the same $\textbf{P}_{u}^{(n)}, \textbf{P}_{-u}^{(n)}, \textbf{P}_o^{(n)}$.
+Then, the gradient of $F'_u$ with respect to each element $p_{u, i}^{(n)}$ of $\textbf{P}_u^{(n)}$ becomes $\partial F'_u/\partial p_{u, i}^{(n)}=$
 </p>
 $$
     \sum_{e \in \mathcal{E}} a_{es_{u, i}} t_e\left[1+\eta\Big(m_e^{\zeta (n)} + \zeta  \frac{f_e^u(\textbf{P}_u^{(n)})}{k_e} m_e^{\zeta-1 (n)}\Big)\right].
 $$<p>
-Let $\nabla_u \Tilde{F}_u =(\partial \Tilde{F}_u/\partial p_{u, i}^{(n)})_{s_{u, i} \in \mathcal{S}_u}$ and denote gradient of $\Tilde{F}_u$ at $\textbf{P}_u^{(n)}, \textbf{m}^{(n)}$ as $\nabla_u \Tilde{F}_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)})$, starting with some initial point for all users, $\textbf{P}^{(0)} \in \mathcal{P}$, the updated recommendation at time step $n+1$ is, therefore, $\forall u \in \mathcal{U}$,
+Let $\nabla_u F'_u =(\partial F'_u/\partial p_{u, i}^{(n)})_{s_{u, i} \in \mathcal{S}_u}$ and denote gradient of $F'_u$ at $\textbf{P}_u^{(n)}, \textbf{m}^{(n)}$ as $\nabla_u F'_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)})$, starting with some initial point for all users, $\textbf{P}^{(0)} \in \mathcal{P}$, the updated recommendation at time step $n+1$ is, therefore, $\forall u \in \mathcal{U}$,
 </p>
 $$
-    \textbf{P}_u^{(n+1)} = \text{proj}_{\mathcal{P}_u}\left[\textbf{P}_u^{(n)}-\alpha_n \nabla_u \Tilde{F}_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)})\right].
+    \textbf{P}_u^{(n+1)} = \text{proj}_{\mathcal{P}_u}\left[\textbf{P}_u^{(n)}-\alpha_n \nabla_u F'_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)})\right].
 $$<p>
-By denoting $\nabla \Tilde{F}(\textbf{P}^{(n)},\textbf{m}^{(n)})=(\nabla_u \Tilde{F}_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)}))_{u \in \mathcal{U}}$ and concatenating \eqref{eq:update_P_u} together, we can get:
+By denoting $\nabla F'(\textbf{P}^{(n)},\textbf{m}^{(n)})=(\nabla_u F'_u(\textbf{P}_u^{(n)}, \textbf{m}^{(n)}))_{u \in \mathcal{U}}$, we can get:
 </p>
 $$
-    \textbf{P}^{(n+1)} = \text{proj}_{\mathcal{P}}\left[\textbf{P}^{(n)}-\alpha_n \nabla \Tilde{F}(\textbf{P}^{(n)}, \textbf{m}^{(n)})\right].
+    \textbf{P}^{(n+1)} = \text{proj}_{\mathcal{P}}\left[\textbf{P}^{(n)}-\alpha_n \nabla F'(\textbf{P}^{(n)}, \textbf{m}^{(n)})\right].
 $$<p>Under the conditions that for all $u \in \mathcal{U}$, the expected cost $F_u$ is continuously differentiable in $\textbf{P} \in \mathcal{P}$ and convex in $\textbf{P}_u \in \mathcal{P}_u$, the sequence of recommendations $\{\textbf{P}^{(n)}\}$, generated by the equation above, converges to an NE, $\textbf{P}^{*}$.
 Therefore, the $u$-th component of $\textbf{P}^{(n+1)}$ can be performed locally by the NRS app linked to user $u$. Such distributed gradient updates still lead to the convergence to an NE under mild assumptions.</p>
 <h2 id="main-results">Main Results</h2>
