@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HOME on Lucile Yang</title>
-    <link>http://localhost:1313/</link>
+    <link>https://lucileee5657.github.io/</link>
     <description>Recent content in HOME on Lucile Yang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lucileee5657.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adaptive Navigational Recommendations for Urban Transportation</title>
-      <link>http://localhost:1313/portfolio/navigational-recommendation/</link>
+      <link>https://lucileee5657.github.io/portfolio/navigational-recommendation/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/navigational-recommendation/</guid>
+      <guid>https://lucileee5657.github.io/portfolio/navigational-recommendation/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;In urban transportation environments, drivers often encounter various path (route) options when navigating to their destinations. This emphasizes the importance of navigational recommendation systems (NRS), which simplify decision-making and reduce travel time for users while alleviating potential congestion for broader societal benefits. However, recommending the shortest path may cause the flash crowd effect, and system-optimal routes may not always align the preferences of human users, leading to non-compliance issues. It is also worth noting that universal NRS adoption is impractical.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Herd Accountability from Auditing Privacy-Preserving Algorithms</title>
-      <link>http://localhost:1313/portfolio/herd-audit/</link>
+      <link>https://lucileee5657.github.io/portfolio/herd-audit/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/herd-audit/</guid>
+      <guid>https://lucileee5657.github.io/portfolio/herd-audit/</guid>
       <description>&lt;p&gt;Paper (This prior work is published in Decision and Game Theory for Security&#xA;(GameSec 2023)): &lt;a href=&#34;https://link.springer.com/chapter/10.1007/978-3-031-50670-3_18&#34;&gt;https://link.springer.com/chapter/10.1007/978-3-031-50670-3_18&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!---&#xA;![The herd audit concept.](/images/herd-audit/concept.png)&#xA;---&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Privacy-preserving AI algorithms are widely adopted in various domains, but the lack of transparency might pose accountability issues. While auditing algorithms can address this issue, machine-based audit approaches are often costly and time-consuming.&lt;/p&gt;&#xA;&lt;p&gt;Herd audit, on the other hand, offers an alternative solution by harnessing collective intelligence. Nevertheless, the presence of epistemic disparity among auditors, resulting in varying levels of expertise and access to knowledge, may impact audit performance. An effective herd audit will establish a credible accountability threat for algorithm developers, incentivizing them to uphold their claims.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Combating Misinformation on Online Social Platform</title>
-      <link>http://localhost:1313/portfolio/misinformation/</link>
+      <link>https://lucileee5657.github.io/portfolio/misinformation/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/misinformation/</guid>
+      <guid>https://lucileee5657.github.io/portfolio/misinformation/</guid>
       <description>&lt;p&gt;Link to Paper (This work is published in 2023 21st International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (WiOpt)): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/10349848&#34;&gt;https://ieeexplore.ieee.org/abstract/document/10349848&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Misinformation has become a growing issue on online social platforms (OSPs), especially during elections or pandemics. To combat this, OSPs have implemented various policies, such as tagging, to notify users about potentially misleading information. However, these policies are often transparent and therefore susceptible to being exploited by content creators, who may not be willing to invest effort into producing authentic content, causing the viral spread of misinformation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy and Energy-Aware Split Deep Learning in Edge Camera Network</title>
-      <link>http://localhost:1313/portfolio/edge-camera-coalition/</link>
+      <link>https://lucileee5657.github.io/portfolio/edge-camera-coalition/</link>
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/edge-camera-coalition/</guid>
+      <guid>https://lucileee5657.github.io/portfolio/edge-camera-coalition/</guid>
       <description>&lt;p&gt;Paper (This work is published in IEEE Transactions on Network and Service Management): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9941479&#34;&gt;https://ieeexplore.ieee.org/abstract/document/9941479&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!---&#xA;![Edge Camera Network](/images/edge-camera-coalition/edge-camera.png)&#xA;---&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Recently, an increasing amount of application tasks have depended on deep learning (DL) inference models on Internet of Things (IoT) based camera networks. However, it is challenging to perform the inference of such resource-hungry DL models on the computationally limited IoT system. Compared to cloud computing, edge computing deploys resources near the end-users to reduce the transmission delay and retains the raw data on the trusted servers to mitigate privacy concerns. Since resources at the edge are limited, management like user association decisions, edge resources allocation, and device configuration with DL model parameter selection becomes essential.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resource Allocation for Decomposable DNN in Edge–IoT Framework</title>
-      <link>http://localhost:1313/portfolio/edge-iot-split-vcg/</link>
+      <link>https://lucileee5657.github.io/portfolio/edge-iot-split-vcg/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/edge-iot-split-vcg/</guid>
+      <guid>https://lucileee5657.github.io/portfolio/edge-iot-split-vcg/</guid>
       <description>&lt;p&gt;Link to Paper (This work is published in IEEE Internet of Things Journal): &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9953097&#34;&gt;https://ieeexplore.ieee.org/abstract/document/9953097&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!---&#xA;![Edge–IoT Applications System Model](/images/edge-iot-split-vcg/system.png)&#xA;---&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;Deep learning (DL) applications have attracted significant attention with the rapidly growing demand for Internet of Things (IoT) systems. However, performing the inference tasks for DL applications on IoT devices is challenging due to the large computational demands of DL models. Recently, edge computing has offered us a solution by deploying resources near the end users. However, resources at the edge are still limited; thus, management issues, such as allocating the networking resources as well as the computing capabilities and configuring the devices appropriately for different applications, become essential.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Internship at Logitech</title>
-      <link>http://localhost:1313/post/logi/</link>
+      <link>https://lucileee5657.github.io/post/logi/</link>
       <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/logi/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/post-logi/logi.png&#34; alt=&#34;Keyboard&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;&#xA;&lt;p&gt;Developed an improvement proposal for the Logitech G915 TKL keyboard based on brainstorming, cross-team discussions and user interviews&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Look cool&lt;/li&gt;&#xA;&lt;li&gt;Better user experience&lt;/li&gt;&#xA;&lt;li&gt;Practicality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;mothod&#34;&gt;Mothod&lt;/h2&gt;&#xA;&lt;p&gt;Disassembled the model, added firmware codes, and modified the circuit board to build a prototype.&lt;/p&gt;&#xA;&lt;h3 id=&#34;timeline&#34;&gt;Timeline&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/post-logi/intern_timeline.png&#34; alt=&#34;During Spring 2020&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-ive-learned&#34;&gt;What I&amp;rsquo;ve learned&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Know the responsibilities of various departments of the company and relationships between them.&lt;/li&gt;&#xA;&lt;li&gt;Know more about the process of product development&lt;/li&gt;&#xA;&lt;li&gt;Know the importance of user needs and the market structure&lt;/li&gt;&#xA;&lt;li&gt;Familiar with the working mode that requires cooperation between different departments&lt;/li&gt;&#xA;&lt;li&gt;Review C/C++&lt;/li&gt;&#xA;&lt;li&gt;Learn presentation skills&lt;/li&gt;&#xA;&lt;li&gt;Practice communication and expressing ideas in English&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://lucileee5657.github.io/post/logi/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lucileee5657.github.io/images/post-logi/logi.png&#34; alt=&#34;Keyboard&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;&#xA;&lt;p&gt;Developed an improvement proposal for the Logitech G915 TKL keyboard based on brainstorming, cross-team discussions and user interviews&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Look cool&lt;/li&gt;&#xA;&lt;li&gt;Better user experience&lt;/li&gt;&#xA;&lt;li&gt;Practicality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;mothod&#34;&gt;Mothod&lt;/h2&gt;&#xA;&lt;p&gt;Disassembled the model, added firmware codes, and modified the circuit board to build a prototype.&lt;/p&gt;&#xA;&lt;h3 id=&#34;timeline&#34;&gt;Timeline&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://lucileee5657.github.io/images/post-logi/intern_timeline.png&#34; alt=&#34;During Spring 2020&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-ive-learned&#34;&gt;What I&amp;rsquo;ve learned&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Know the responsibilities of various departments of the company and relationships between them.&lt;/li&gt;&#xA;&lt;li&gt;Know more about the process of product development&lt;/li&gt;&#xA;&lt;li&gt;Know the importance of user needs and the market structure&lt;/li&gt;&#xA;&lt;li&gt;Familiar with the working mode that requires cooperation between different departments&lt;/li&gt;&#xA;&lt;li&gt;Review C/C++&lt;/li&gt;&#xA;&lt;li&gt;Learn presentation skills&lt;/li&gt;&#xA;&lt;li&gt;Practice communication and expressing ideas in English&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Exchange Student in Turkey</title>
-      <link>http://localhost:1313/post/exchange/</link>
+      <link>https://lucileee5657.github.io/post/exchange/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/exchange/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/post-exchange/turkey_2.png&#34; alt=&#34;Turkey&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-turkey&#34;&gt;Why Turkey&lt;/h3&gt;&#xA;&lt;p&gt;There are so many schools, countries in the exchange program. Why did I choose  Bilkent in Turkey?&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Budget: Devaluation of the Turkish Lira&lt;/li&gt;&#xA;&lt;li&gt;Culture: Experience Middle East and Islamic culture&lt;/li&gt;&#xA;&lt;li&gt;History: Prehistoric, Roman, Seljuk, Ottoman Empire&lt;/li&gt;&#xA;&lt;li&gt;Landscape: Like Cappadocia, Pamukkale&amp;hellip;etc.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/post-exchange/turkey_1.png&#34; alt=&#34;Reasons&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;對我來說，土耳其一直是個謎，想去探秘的念頭由來已久。於是，我和我的旅伴們相約來到「文明的搖籃」——土耳其&#xA;伊斯坦堡是世界上唯一一座既做過基督教帝國首都、又做過伊斯蘭教帝國首都的城市。也是東西方世界神奇的交匯點，通過博斯普魯斯海峽橫跨歐亞大陸。在這個大約有1000座清真寺、500個東政教堂的城市，你永遠也不用擔心會視覺疲勞。&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/post-exchange/turkey_4.png&#34; alt=&#34;Reasons&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;about-school-classes&#34;&gt;About school classes&lt;/h3&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;What’s the differences between courses I took in Taiwan and in Turkey?&lt;/p&gt;</description>
+      <guid>https://lucileee5657.github.io/post/exchange/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lucileee5657.github.io/images/post-exchange/turkey_2.png&#34; alt=&#34;Turkey&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-turkey&#34;&gt;Why Turkey&lt;/h3&gt;&#xA;&lt;p&gt;There are so many schools, countries in the exchange program. Why did I choose  Bilkent in Turkey?&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Budget: Devaluation of the Turkish Lira&lt;/li&gt;&#xA;&lt;li&gt;Culture: Experience Middle East and Islamic culture&lt;/li&gt;&#xA;&lt;li&gt;History: Prehistoric, Roman, Seljuk, Ottoman Empire&lt;/li&gt;&#xA;&lt;li&gt;Landscape: Like Cappadocia, Pamukkale&amp;hellip;etc.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://lucileee5657.github.io/images/post-exchange/turkey_1.png&#34; alt=&#34;Reasons&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;對我來說，土耳其一直是個謎，想去探秘的念頭由來已久。於是，我和我的旅伴們相約來到「文明的搖籃」——土耳其&#xA;伊斯坦堡是世界上唯一一座既做過基督教帝國首都、又做過伊斯蘭教帝國首都的城市。也是東西方世界神奇的交匯點，通過博斯普魯斯海峽橫跨歐亞大陸。在這個大約有1000座清真寺、500個東政教堂的城市，你永遠也不用擔心會視覺疲勞。&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;&lt;img src=&#34;https://lucileee5657.github.io/images/post-exchange/turkey_4.png&#34; alt=&#34;Reasons&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;about-school-classes&#34;&gt;About school classes&lt;/h3&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;What’s the differences between courses I took in Taiwan and in Turkey?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
